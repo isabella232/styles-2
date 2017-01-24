@@ -1,0 +1,19 @@
+
+pre {
+	padding: 0;
+	white-space: pre;
+	font-size: 13px;
+	border-width: 0;
+	padding: $padding-base-vertical $padding-base-horizontal;
+	overflow: auto;
+	background: $silver-light;
+	resize: vertical;
+	border-radius: $border-radius-base;
+	&:not(.pre-large) {
+		height: 8em;
+	}
+}
+
+figure.highlight {
+	tab-size: 2; 
+}

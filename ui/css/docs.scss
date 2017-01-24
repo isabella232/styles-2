@@ -1,0 +1,20 @@
+---
+# The documentation stylesheet
+---
+
+$hybrid: false;
+
+@charset "utf-8";
+@import "fonts";
+@import "bootstrap/variables";
+@import "functions/queries";
+@import "functions/mixins";
+
+.sntr {
+	@import "bootstrap/bootstrap-sass/bootstrap";
+	@import "styles";
+	@import "interactive";
+	@import "layout";
+}
+
+@import "widgets";

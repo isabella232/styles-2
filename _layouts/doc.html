@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" class="sntr">
+	<head>
+		{% include options/settings.html %}
+		{% include options/meta.html %}
+		{% include options/styles.html %}
+		{% include options/amp.html %}
+		{% include options/scripts.html %}
+	</head>
+	<body>
+		<div class="page">
+			{% include content/nav.html %}
+			{{ content }}
+		</div>
+	</body>
+</html>

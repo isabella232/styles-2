@@ -1,0 +1,58 @@
+# --------------------------------------------------
+# Site settings
+title: Sinter
+description: Visual Interface System for Sinter
+email: josh@quartzstudio.com
+owner: http://github.com/fishtown-analytics
+repo: styles
+branch: gh-pages
+
+# --------------------------------------------------
+# Site imagery
+favicon: /ui/img/graph/sinter-favicon.png
+avatar: /ui/img/graph/sinter-avatar.png
+poster: /ui/img/graph/sinter-poster.jpg
+#twitter: sinter
+#facebook: sinter
+
+# --------------------------------------------------
+# the subpath of your site, e.g. /blog/
+baseurl: "/styles"
+
+# --------------------------------------------------
+# Gems
+gems: ['liquify','jekyll-octicons']
+
+# --------------------------------------------------
+# Build settings
+sass:
+  style: compressed
+  sass_dir: ui/_sass
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+  docs:
+    output: true
+    permalink: /docs/:path/
+  styles:
+    output: true
+    permalink: /styles/:path/
+
+defaults:
+-
+  scope:
+    path: ""
+    type: "pages"
+  values:
+    layout: "page"
+-
+  scope:
+    path: ""
+    type: "docs"
+  values:
+    layout: "doc"
+
+
+

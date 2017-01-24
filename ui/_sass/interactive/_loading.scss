@@ -1,0 +1,44 @@
+@mixin loading(){
+  text-align: center;
+  &:after {
+    content: '';
+    border: 1px solid $silver-dark;
+    border-top-color: $blue;
+    border-top-width: 2px;
+    font-size: 20px;
+    height: 1em;
+    width: 1em;
+    @include spinning(.75s);
+    @include circle;
+    margin: auto;
+    display: inline-block;
+    vertical-align: middle;
+    top: -1px;
+    margin-right: 6px;
+  }
+}
+
+.loading {
+	@include loading;
+	&.loading-large {
+		&:after {
+			font-size: 40px;
+		}
+	}
+}
+
+.loading-overlay {
+	pointer-events: none;
+	background: $silver-light;
+	@include round;
+	> * { opacity: .125; }
+	.loading {
+		@include fill;
+		opacity: 1;
+		&:after {
+			display: block;
+			@include middle;
+			font-size: 40px;
+		}
+	}
+}

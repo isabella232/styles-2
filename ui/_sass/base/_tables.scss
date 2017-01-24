@@ -1,0 +1,106 @@
+.table {
+  margin-bottom: 40px;
+  > thead > tr > th {
+    border-width: 1px; 
+    @include labels;
+    color: $light;
+  }
+  &.table-borderless {
+    th, td { border: 0; }
+  }
+  &.table-hover {
+    tr {
+      @include transitions; 
+      @include large(){
+        th, td {
+          &:first-child {
+            border-top-left-radius: $border-radius-base; 
+            border-bottom-left-radius: $border-radius-base; 
+          }
+          &:last-child {
+            border-top-right-radius: $border-radius-base; 
+            border-bottom-right-radius: $border-radius-base; 
+          }
+        }
+      }
+    }
+  }
+  &.table-justified {
+    th, td {
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+  > thead > tr,
+  > tbody > tr,
+  > tfoot > tr {
+    th, td {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: $padding-base-horizontal; 
+      padding-right: $padding-base-horizontal;
+      &.cell-small {
+        width: 1px;
+        white-space: nowrap;
+        &:first-child { padding-right: 0; }
+        &:last-child { padding-left: 0; }
+      }
+    }
+  }
+  &.table-condensed {
+    font-size: $font-size-small;
+  }
+}
+
+// styles for using alternate elements within tables, like <a href="#">anchors</a>
+.table { display: table; }
+.caption { display: table-caption; }
+.colgroup { display: table-column-group; }
+.thead { display: table-header-group; }
+.tfoot { display: table-footer-group; }
+.tbody { display: table-row-group; }
+.td { display: table-cell; }
+.col { display: table-column; }
+.tr { display: table-row; }
+
+.table-responsive {
+  border-radius: $border-radius-base;
+  @include large(){ overflow: visible; }
+  @include small(){ @include scrolling; }
+}
+
+.table-alignment {
+  @include large(){
+    margin-left: $padding-base-horizontal*-1;
+    margin-right: $padding-base-horizontal*-1;
+  }
+}
+
+.cell-link {
+  display: block;
+  padding: $table-cell-padding $padding-base-horizontal; 
+  margin: $table-cell-padding*-1 $padding-base-horizontal*-1; 
+  &:not(.alternate):not(.text-light) {  
+    font-style: inherit;
+    font-weight: inherit;
+    color: inherit;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &.alternate {
+    font-style: oblique;
+  }
+}
+
+.cell-protected {
+  color: $light !important;
+  font-weight: normal !important;
+  &:empty {
+    &:before {
+      content: '—';
+      color: $lighter;
+    }
+  }
+}

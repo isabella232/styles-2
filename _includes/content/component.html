@@ -1,0 +1,14 @@
+<h4 id="guide-{{ entry.title | slugify }}">
+	{{ entry.title | capitalize }}
+	<small><a href="#" data-toggle="collapse" data-target="#code-{{ entry.title | slugify }}">view code</a></small>
+</h4>
+<br/>
+<div style="padding-left: 7.5%">
+	<div class="margin">
+		{{ entry.content | markdownify }}
+	</div>
+	<div class="margin collapse fade" id="code-{{ entry.title | slugify }}" >
+		{% highlight html %}{{ entry.content }}{% endhighlight %}
+	</div>
+</div>
+<hr class="gap"/>

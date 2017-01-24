@@ -1,0 +1,109 @@
+.form {
+
+}
+
+.form-group,
+.form-inline {
+	> * {
+		&:not(:last-child) { margin-right: .5em; 
+			.form-horizontal & { margin-right: 0; }
+		}
+		label { vertical-align: bottom; }
+	}
+}
+
+.help-block {
+	color: $light;
+	font-style: oblique;
+	font-weight: normal;
+	@include font-size-small;
+	display: block;
+	p { margin: 0; display: inline; }
+	&.help-block-inline {
+		display: inline;
+	}
+	&.help-block-margins {
+		margin: 10px 0;
+	}
+	ul, li {
+		color: inherit;
+	}
+}
+
+.form-group-lg {
+	font-size: $font-size-large;
+	label {
+		margin-bottom: 10px;
+	}
+}
+
+$form-grid-padding: 6px;
+
+.form-grid {
+	@include table-rows(top);
+	.form-row {
+		> * {
+			padding: $form-grid-padding;
+			&:first-child { padding-left: 0; }
+			&:last-child { padding-right: 0; }
+			.form-row > * { padding-top: 0; padding-bottom: 0; }
+		}
+		.form-label {
+			white-space: nowrap;
+			width: 1px;
+			label {
+				margin: 0;
+				padding: ( $padding-base-vertical + 1 ) 0;
+				&.text-large {
+					padding: ( $padding-large-vertical + 2 ) 0;
+				}
+			}
+			// &:first-child {
+			// 	+ .form-response {
+			// 		padding-left: $form-grid-padding*2;
+			// 	}
+			// }
+		}
+		.form-response {
+			.help-block {
+				margin: 0;
+				top: 5px;
+			}
+			&.form-response-short {
+				width: 1px;
+				white-space: nowrap;
+			}
+			.form-response,
+			.form-label {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+		}
+		.form-option {
+			white-space: nowrap;
+			width: 1px;
+		}
+		> .form-label:first-child {
+			padding-right: 11px;
+		}
+	}
+	&:not(.form-grid-left) {
+		.form-label { text-align: right; }
+	}
+}
+
+.form-vertical {
+	.form-row {
+		padding-bottom: $form-grid-padding*1.5;
+	}
+}
+
+.form-footer {
+	padding: $form-grid-padding*2 0;
+}
+
+.has-error {
+	.option {
+		color: $state-danger-text;
+	}
+}

@@ -1,0 +1,33 @@
+@mixin validation-override($background,$text,$help:false) {
+	.input-group-addon,
+	.form-control {
+		border-color: $input-border;
+		background-color: $background;
+		color: $text;
+		@include placeholder(mix($text,$background,40%));
+		+ .input-group-addon,
+		+ .form-control {
+			border-left: 0;
+		}
+	}
+	.form-control {
+		&:hover {
+			background: saturate(darken($background,3%),3%);
+		}
+	}
+	.help-block {
+		@if $help {
+			color: $help;
+		}
+		a {
+			color: $text;
+			text-decoration: none !important;
+			border-bottom: 1px solid transparentize($text,.7);
+		}
+	}
+}
+
+
+.has-success { @include validation-override($input-bg,$dark,$light); }
+.has-warning { @include validation-override($state-warning-bg,$state-warning-text); }
+.has-danger, .has-error { @include validation-override($state-danger-bg,$state-danger-text); }

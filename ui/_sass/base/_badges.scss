@@ -1,0 +1,15 @@
+.badge {
+	@include labels;
+	border: 1px solid transparent;
+}
+
+.active {
+	.badge {
+		color: $component-active-color;
+		background: saturate(darken($component-active-bg,7%),15%);
+	}
+}
+
+.list-group-item .badge {
+	float: right;
+}
