@@ -1,0 +1,16 @@
+.card {
+	.section { border-left: 3px solid $silver-dark; margin: 0; }
+	&.card-success .section { border-color: $green; }
+	&.card-danger .section { border-color: $red; }
+	&.card-warning .section { border-color: $yellow; }
+	&.card-info .section { border-color: $blue; }
+}
+
+.cards {
+	margin: -20px;
+	@include columns(3,480px,0);
+	.card {
+		@include avoid-break;
+		padding: 20px;
+	}
+}

@@ -1,0 +1,14 @@
+.flex {
+	@include flex;
+	@include flex-wrap;
+	@include flex-justify;
+	&.flex-middle { @include flex-middle; }
+	.flex-item {
+		@include flex-weight(1);
+		@include flex-column;
+		.flex-scroll { @include flex-weight(1); @include scroll; }
+		@for $i from 1 through 12 {
+			&.flex-#{$i} { @include flex-weight($i); }
+		}
+	}
+}

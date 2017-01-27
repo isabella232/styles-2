@@ -1,0 +1,15 @@
+.header {
+	height: 40px;
+	@include table(middle);
+	.header-title {
+		// width: 1px;
+		// white-space: nowrap;
+	}
+	.header-filters {
+		
+	}
+	.header-actions,
+	.header-labels {
+		text-align: right;
+	}
+}

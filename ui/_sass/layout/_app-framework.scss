@@ -1,0 +1,187 @@
+$app-unit: 80px;
+$app-padding: 20px;
+$app-padding-large: 40px;
+$app-menu: 280px;
+$app-nav-bg: $navy;
+$app-menu-bg: $blue-dark;
+$app-menu-header-bg: $app-menu-bg;
+
+.app {
+	@include full;
+	position: fixed;
+	overflow: hidden;
+	.app-nav {
+		@include full;
+		right: auto;
+		z-index: 2;
+		@include trans((margin left),.25s);
+	}
+	.app-content {
+		@include full;
+		@include trans((margin left),.25s);
+		left: $app-unit;
+		.app-menu {
+			@include full;
+			right: 100%;
+			left: $app-menu*-1;
+			.app-menu-section {
+				@include full;
+			}
+			.app-menu-header {
+
+			}
+			.app-menu-body {
+				@include full;
+				top: $app-unit;
+			}
+		}
+		.app-page {
+			@include full;
+			.app-header {
+				@include full;
+				bottom: auto;
+			}
+			.app-body {
+				@include full;
+				top: $app-unit;
+				@include scroll;
+			}
+		}
+	}
+	&.app-menu-visible {
+		.app-content {
+			margin: 0 0 0 $app-menu;
+		}
+	}
+}
+
+
+.app-nav {
+	width: $app-unit;
+	background: $app-nav-bg;
+	.app-nav-link {
+		cursor: pointer;
+		display: block;
+		height: $app-unit;
+		width: $app-unit;
+		color: $blue-darker;
+		svg {
+			width: 40px; height: 40px; display: block;
+			@include middle;
+		}
+		path, polygon { fill: currentColor; }
+		@include transitions(.25s);
+		&:hover { background: $silver; color: $orange; }
+		&:active { background: $white; }
+		&.active { background: $blue-dark; color: white !important; }
+		&.current { color: $orange; }
+		&.app-nav-logo {
+			background: $blue;
+			color: $blue-darkest;
+			&:hover {
+				background: $blue;
+				color: white;
+			}
+		}
+		&.app-nav-add {
+			border: 18px solid $app-nav-bg;
+			border-radius: ( 18px + $border-radius-xl );
+			background: $orange;
+			color: white;
+			&:hover {
+				background: $yellow;
+			}
+		}
+		&.app-nav-account {
+			border: 18px solid transparent;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			img {
+				@include fill;
+				@include circle;
+			}
+		}
+	}
+}
+
+.app-menu {
+	width: $app-menu;
+	background: $app-menu-bg;
+	.app-menu-header {
+		height: $app-unit;
+		background: $app-menu-header-bg;
+		padding: $app-padding $app-padding-large;
+		color: white;
+	}
+	.app-menu-body {
+		ul {
+			@include clean;
+			li {
+				a {
+					display: block;
+					padding: 9px $app-padding-large 10px;
+					height: ( $app-unit / 2 );
+					color: white;
+					@include transitions(.25s);
+					&:hover {
+						background: mix($blue-dark,$blue-darker);
+					}
+				}
+			}
+		}
+	}
+}
+
+.app-header {
+	background: white;
+	box-shadow: 0 1px 0 $outline;
+	padding: $app-padding $app-padding-large;
+	height: $app-unit;
+}
+
+.app-body {
+	background: $silver;
+	padding: $app-padding-large;
+	.app-setup {
+		@include table(middle);
+		height: 100%;
+		.app-setup-content {
+			padding-bottom: $app-padding-large;
+			.app-setup-body {
+				max-width: 1080px;
+				margin: auto;
+			}
+		}
+	}
+}
+
+.app-page {
+	.app-page-overlay {
+		@include full;
+		@include trans(opacity,.25s);
+		z-index: 2;
+		background: white;
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+
+.app-menu-visible {
+	.app-page-overlay {
+		pointer-events: auto;
+		opacity: 0;
+	}
+}
+
+.app-minimal {
+	.app-nav { left: $app-unit*-1; }
+	.app-content { left: 0; }
+}
+
+.app-flex {
+	margin: $app-padding*-1;
+	.flex-item {
+		margin: $app-padding;
+	}
+}

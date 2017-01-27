@@ -1,51 +1,50 @@
 $white: white;
+$dark: #333;
+$normal: #333;
+
+$light: #a3a6a9;
+$lighter: #c3c6c9;
+
+
+$silver: #f5f7f9;
+$silver-dark: #e9ecef;
+$silver-darker: #d0d5da;
+
+$line: mix($silver,black,95%);
+$outline: rgba(0,0,0,.05);
+
+$navy: #23404d;
+
+$blue: #40bdb7;
+$blue-darker: #328391;
+$blue-dark: mix($blue,$blue-darker);
+$blue-darkest: mix($blue-dark,$navy);
+
+$green: #7fc05f;
+$green-darker: #3f9123;
+$green-dark: mix($green,$green-darker);
+
+$orange: #fa6c39;
+$orange-darker: #bc2131;
+$orange-dark: mix($orange,$orange-darker);
+
 $yellow: #ffb600;
-$blue: #03c8d4;
-$green: #3ecf8e;
-$green: #0ebd6f;
-$orange: $yellow;
-$red: #ff6e4c;
-$navy: #0069d9;
+$yellow-dark: mix($yellow,$orange);
+$yellow-darker: $orange;
+
+$red: $orange;
+$red-darker: $orange-darker;
+$red-dark: $orange-dark;
 
 $gray: #687587;
 
-$line: #e7e8e9;
-$line-dark: darken($line,1%);
-$highlight: lighten($blue,50%);
-$navy-dark: #001151;
-$navy-light: #2a45a6;
-$navy-lighter: #5376d3;
-$navy-lightest: #7ba6ff;
+$highlight: $silver;
 
+$error: $red-dark;
 
-$slate: #909fae;
-$slate-dark: #687587;
-$slate-darker: #586577;
-$slate-light: #bcc5ce;
-
-$faint: #e7e7e9;
-$silver: #eff1f3;
-$silver-dark: #e4e7ea;
-$silver-darker: darken($silver-dark,7%);
-$silver-light: #f7f8f9;
-
-@if ( $hybrid ) {
-	$line: desaturate($line,100%);
-	$silver: desaturate($silver,100%);
-	$silver-dark: desaturate($silver-dark,100%);
-	$silver-light: desaturate($silver-light,100%);
-}
-
-$neutral: #c4c5c6;
-$dark: #222;
-$normal: #555;
-$light: #999;
-$lighter: #bbb;
-$error: #f33;
-
-$brand: $orange;
-$link: $green;
-$offset: $blue;
+$brand: $blue;
+$link: $blue;
+$offset: $green;
 
 $margin-small: 7.5vw;
 
@@ -67,7 +66,7 @@ $gray:                   #888;
 $gray-light:             $light;
 $gray-lighter:           $silver;
 
-$brand-primary:         $green !default; // #337ab7
+$brand-primary:         $blue !default; // #337ab7
 $brand-success:         $green !default;
 $brand-info:            $blue !default;
 $brand-warning:         $orange !default;
@@ -79,7 +78,7 @@ $brand-danger:          $red !default;
 // //## Settings for some of the most global styles.
 
 // //** Background color for `<body>`.
-$body-bg:               white !default;
+$body-bg:               $silver !default;
 // //** Global text color on `<body>`.
 $text-color:            $dark !default;
 // //** Global textual link color.
@@ -102,18 +101,19 @@ $font-family-monospace: "Source Code Pro", $font-family-blank, monospace !defaul
 $font-family-base:        $font-family-sans-serif !default;
 
 $font-size-small:         14px !default;
+$font-size-code:          13px !default;
 
-$font-size-base:          16px !default;
-$font-size-base-full:     16px !default;
+$font-size-base:          14px !default;
+$font-size-base-full:     14px !default;
 
-$font-size-large:         18px !default;
-$font-size-large-full:    18px !default;
+$font-size-large:         16px !default;
+$font-size-large-full:    16px !default;
 
-$font-size-larger:        24px !default;
-$font-size-larger-full:   24px !default;
+$font-size-larger:        19px !default;
+$font-size-larger-full:   19px !default;
 
-$font-size-largest:       32px !default;
-$font-size-largest-full:  36px !default;
+$font-size-largest:       24px !default;
+$font-size-largest-full:  24px !default;
 
 $font-size-h1: $font-size-largest;
 $font-size-h2: $font-size-largest;
@@ -156,13 +156,13 @@ $line-height-serif-computed:        $line-height-serif-base;
 // //
 // //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
-$padding-base-vertical:     5px !default;
+$padding-base-vertical:     4px !default;
 $padding-base-horizontal:   15px !default;
 
 $padding-large-vertical:    10px !default;
 $padding-large-horizontal:  20px !default;
 
-$padding-small-vertical:    2px !default;
+$padding-small-vertical:    1px !default;
 $padding-small-horizontal:  10px !default;
 
 // $padding-xs-vertical:       1px !default;
@@ -174,7 +174,7 @@ $padding-small-horizontal:  10px !default;
 $border-radius-base:        4px !default;
 $border-radius-large:       4px !default;
 $border-radius-xl:          6px !default;
-// $border-radius-small:       3px !default;
+$border-radius-small:       100px !default;
 
 // //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    #fff !default;
@@ -276,19 +276,19 @@ $input-border-minimal:            darken($line,2%) !default;
 
 // //** Border color for inputs on focus
 $input-border-hover:             transparent !default;
-$input-border-focus:             $green !default;
+$input-border-focus:             $blue !default;
 
 // //** Placeholder text color
 $input-color-placeholder:        $light !default;
 $input-color-placeholder-hover:        darken($light,10%) !default;
 
 // //** Default `.form-control` height
-$input-height-base:              36px;
+$input-height-base:              32px;
 $textarea-height:                4em;
 // //** Large `.form-control` height
-$input-height-large:             50px;
+$input-height-large:             48px;
 // //** Small `.form-control` height
-$input-height-small:             28px;
+$input-height-small:             26px;
 
 // //** `.form-group` margin
 // $form-group-margin-bottom:       15px !default;
@@ -313,7 +313,7 @@ $input-height-small:             28px;
 $dropdown-bg:                    #fff !default;
 // //** Dropdown menu `border-color`.
 $dropdown-border:                rgba(0,0,0,.1) !default;
-$dropdown-shadow:                0 5px 10px rgba(0,0,0,.05), 0 0 0 1px rgba(0,0,0,.1) !default;
+$dropdown-shadow:                0 5px 10px rgba(0,0,0,.15), 0 0 0 1px rgba(0,0,0,.05) !default;
 $widget-shadow:                0 10px 20px rgba(0,0,0,.15), 0 0 0 1px rgba(0,0,0,.05) !default;
 // //** Dropdown menu `border-color` **for IE8**.
 $dropdown-fallback-border:       #ccc !default;
@@ -474,7 +474,7 @@ $container-lg:                 $container-large-desktop !default;
 // //=== Inverted navbar
 // // Reset inverted navbar basics
 $navbar-inverse-color:                      white !default;
-$navbar-inverse-bg:                         $navy-light !default;
+$navbar-inverse-bg:                         $navy !default;
 $navbar-inverse-border:                     transparent !default;
 
 // // Inverted navbar links
@@ -483,7 +483,7 @@ $navbar-inverse-link-hover-color:           white !default;
 $navbar-inverse-link-hover-bg:              transparent !default;
 $navbar-inverse-link-active-color:          white !default;
 $navbar-inverse-link-active-bg:             transparent !default;
-$navbar-inverse-link-disabled-color:        $navy-light !default;
+$navbar-inverse-link-disabled-color:        $navy !default;
 $navbar-inverse-link-disabled-bg:           transparent !default;
 
 // // Inverted navbar brand label

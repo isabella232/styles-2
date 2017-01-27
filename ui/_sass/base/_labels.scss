@@ -1,34 +1,15 @@
-@mixin label-colors($text,$bg) {
-	color: $text;
-	background: $bg;
-}
-
-
 .label {
-	@include font-size-small;
-	@include pill;
-	font-style: oblique;
-	white-space: nowrap;
-	height: $input-height-small;
-	border: 1px solid transparent !important;
+	@include labels;
 	display: inline-block;
-	font-weight: normal;
-	padding: $padding-small-vertical $padding-small-horizontal;
+	border: 0;
+	background: transparent !important;
 	@include transitions;
-	&.label-default { @include label-colors($dark,$btn-default-bg) }
-	&.label-success { @include label-colors($alert-success-text,$alert-success-bg); }
-	&.label-info { @include label-colors($alert-info-text,$alert-info-bg); }
-	&.label-warning { @include label-colors($alert-warning-text,$alert-warning-bg); }
-	&.label-danger { @include label-colors($alert-danger-text,$alert-danger-bg); }
+	&.label-default { color: $light; }
+	&.label-success { color: $green-dark; }
+	&.label-info { color: $blue-dark; }
+	&.label-warning { color: $yellow-dark; }
+	&.label-danger { color: $red-dark; }
+	padding: 6px 0;
+	text-align: inherit;
 }
 
-
-a.label {
-	&:hover, &:focus { 
-		&.label-default { @include label-colors(darken($dark,15%),$btn-default-bg-hover) }
-		&.label-success { @include label-colors(darken($alert-success-text,15%),darken($alert-success-bg,7%)); }
-		&.label-info { @include label-colors(darken($alert-info-text,15%),darken($alert-info-bg,7%)); }
-		&.label-warning { @include label-colors(darken($alert-warning-text,15%),darken($alert-warning-bg,7%)); }
-		&.label-danger { @include label-colors(darken($alert-danger-text,15%),darken($alert-danger-bg,7%)); }
-	}
-}

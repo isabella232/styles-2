@@ -37,7 +37,7 @@ a.inherit { color: inherit;
 }
 
 #{h()} {
-	font-weight: bold;
+	font-weight: normal;
 	> a { color: inherit; 
 		&:hover, &:active {
 			color: $link !important;
@@ -51,18 +51,21 @@ a.inherit { color: inherit;
 		font-style: oblique;
 		letter-spacing: 0;
 		color: $light;
-		&:before { content: ' '; }
+		&:before { content: ' '; margin-left: .25em; }
 	}
 	@include small(){ br { display: none; } }
 }
 
-
 .lockup { @include lockup; }
 
+.h0 { @include font-size-largest; }
 
-#{h(1,2)} { @include font-size-largest; }
-#{h(3,4)} { @include font-size-larger; }
-#{h(5,6)} { @include font-size-base; }
+#{h(1)} { @include font-size-larger; }
+#{h(2)} { @include labels(large); }
+#{h(3)} { @include font-size-large; }
+#{h(4)} { @include labels(medium); color: $light; }
+#{h(5)} { @include font-size-base; }
+#{h(6)} { @include labels(small); color: $light; }
 
 #{h()}, dl, dt, dd, div, b, strong, i, em, p, a, ul, ol, li, span, img, input, code, label, blockquote, br, button, caption, table, tr, td, th, div, form, hr, pre, script, select, strike, tbody, textarea, tfoot, thead, small, big, sup, sub, fieldset, legend {
 	text-align: inherit;
@@ -158,9 +161,7 @@ a.text-light {
 .background-green { background-color: $green; }
 .background-blue { background-color: $blue; }
 .background-silver { background-color: $silver; }
-.background-silverlight { background-color: $silver-light; }
 .background-navy { background-color: $navy; }
-.background-navydark { background-color: $navy-dark; }
 
 mark {
 	background: transparent;
@@ -204,6 +205,17 @@ mark {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	br { display: none; }
+}
+
+a { cursor: pointer; }
+
+.meta {
+	font-style: oblique;
+	color: $light;
+}
+
+.block {
+	display: block !important;
 }
 
 .flush, .flush-bottom { margin-bottom: 0; }

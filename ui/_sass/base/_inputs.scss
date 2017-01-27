@@ -2,6 +2,7 @@
 	@include box-shadow(none);
 	@include placeholder-style(null,oblique);
 	@include trans((background-color border border-color box-shadow),.25s,$bezier);
+	border-bottom-color: $input-bg-hover;
 	&:not(.input-sm):not(.input-lg) { @include font-size-base; }
 	text-overflow: ellipsis;
 	color: $dark;
@@ -33,7 +34,7 @@
 		font-style: oblique;
 	}
 	&.input-pill {
-		@include pill;
+		@include pill(!important);
 	}
 	&.input-link {
 		color: $link-color;

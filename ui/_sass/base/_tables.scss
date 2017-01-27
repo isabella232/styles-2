@@ -3,27 +3,10 @@
   > thead > tr > th {
     border-width: 1px; 
     @include labels;
-    color: $light;
+    color: $lighter;
   }
   &.table-borderless {
     th, td { border: 0; }
-  }
-  &.table-hover {
-    tr {
-      @include transitions; 
-      @include large(){
-        th, td {
-          &:first-child {
-            border-top-left-radius: $border-radius-base; 
-            border-bottom-left-radius: $border-radius-base; 
-          }
-          &:last-child {
-            border-top-right-radius: $border-radius-base; 
-            border-bottom-right-radius: $border-radius-base; 
-          }
-        }
-      }
-    }
   }
   &.table-justified {
     th, td {
@@ -36,20 +19,21 @@
   > tbody > tr,
   > tfoot > tr {
     th, td {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      // padding-top: 10px;
+      // padding-bottom: 10px;
       padding-left: $padding-base-horizontal; 
       padding-right: $padding-base-horizontal;
-      &.cell-small {
+      &all {
         width: 1px;
         white-space: nowrap;
-        &:first-child { padding-right: 0; }
-        &:last-child { padding-left: 0; }
       }
     }
   }
   &.table-condensed {
     font-size: $font-size-small;
+  }
+  .pull-right {
+    z-index: 2;
   }
 }
 

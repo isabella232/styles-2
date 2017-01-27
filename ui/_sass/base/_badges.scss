@@ -1,6 +1,11 @@
 .badge {
 	@include labels;
 	border: 1px solid transparent;
+	padding: 7px 10px;
+	@include pill;
+	&.badge-success { background: $brand-success; color: white; }
+	&.badge-warning { background: $brand-warning; color: white; }
+	&.badge-danger { background: $brand-danger; color: white; }
 }
 
 .active {

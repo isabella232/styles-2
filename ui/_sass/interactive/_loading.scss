@@ -29,7 +29,7 @@
 
 .loading-overlay {
 	pointer-events: none;
-	background: $silver-light;
+	background: $silver;
 	@include round;
 	> * { opacity: .125; }
 	.loading {
@@ -42,3 +42,46 @@
 		}
 	}
 }
+
+$waiting-dot: 6px;
+$waiting-buffer: 10px;
+
+@mixin waiting(){
+  text-align: center;
+  margin: 0 ( $waiting-dot + $waiting-buffer );
+  width: $waiting-dot;
+  height: $waiting-dot;
+  .waiting-dots { width: $waiting-dot; height: $waiting-dot; }
+  .waiting-dots:before, &:after, &:before {
+  	content: '';
+  	width: 100%;
+  	height: 100%;
+  	background: currentColor;
+  	position: absolute; top: 0;
+  	@include circle;
+  	@include transitions;
+  	opacity: .5;
+  }
+  &:before { right: ( $waiting-dot + $waiting-buffer ); @include pulsing(2s,0s); }
+  .waiting-dots:before { left: 0; @include pulsing(2s,.25s); }
+  &:after { left: ( $waiting-dot + $waiting-buffer ); @include pulsing(2s,.5s); }
+}
+
+.waiting {
+	//color: $silver-darker;
+	color: $blue;
+	@include waiting;
+}
+
+.waiting-overlay {
+	pointer-events: none;
+	background: $silver;
+	@include round;
+	> * { opacity: .125; }
+	.waiting {
+		opacity: 1;
+		@include middle;
+		
+	}
+}
+

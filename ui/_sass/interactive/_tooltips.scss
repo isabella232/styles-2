@@ -2,9 +2,10 @@
 	@include box-shadow($dropdown-shadow);
 	padding: 0 !important;
 	@include round;
+	margin: 0 !important;
 	.tooltip-arrow { 
 		background: $tooltip-bg;
-		box-shadow: 0 0 0 1px rgba(0,0,0,.15);
+		box-shadow: 0 0 0 1px rgba(0,0,0,.0875);
 		border-radius: 2px;
 		width: 12px;
 		height: 12px;
@@ -17,9 +18,10 @@
 	&.right .tooltip-arrow { margin-left: -3px; }
 	.tooltip-inner {
 		@include font-size-small;
-		font-style: oblique;
+		font-style: normal;
 		@include round;
 		margin: 0 !important;
-		padding: $padding-base-vertical $padding-base-horizontal;
+		padding: 6px 16px 7px;
+		border-radius: $border-radius-xl;
 	}
 }

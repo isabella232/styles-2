@@ -39,6 +39,9 @@ collections:
   styles:
     output: true
     permalink: /styles/:path/
+  templates:
+    output: true
+    permalink: /templates/:path/
 
 defaults:
 -
@@ -53,6 +56,11 @@ defaults:
     type: "docs"
   values:
     layout: "doc"
-
+-
+  scope:
+    path: ""
+    type: "templates"
+  values:
+    layout: "app"
 
 

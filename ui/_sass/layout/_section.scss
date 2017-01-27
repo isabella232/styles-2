@@ -1,0 +1,107 @@
+$section-padding: 15px;
+$section-padding-small: 10px;
+$section-padding-large: 30px;
+
+.section {
+	border-radius: $border-radius-base;
+	margin-bottom: 40px;
+	&:not(.section-seamless) {
+		box-shadow: 0 0 0 1px $outline;
+		background: white;
+	}
+	.section-empty { padding: $section-padding-large $section-padding-large; }
+	.section-header { padding: $section-padding-small $section-padding-large; }
+	.section-body { padding: $section-padding $section-padding-large;
+		&.section-body-large, &.section-body-large-top { padding-top: $section-padding-large; }
+		&.section-body-large, &.section-body-large-bottom { padding-bottom: $section-padding-large; }
+	}
+
+	&.section-max-large { max-height: 60vh; }
+	&.section-max-medium { max-height: 40vh; }
+	&.section-max-small { max-height: 20vh; }
+	&.section-launch {
+		cursor: pointer;
+		@include transitions(.25s);
+		&:hover {
+			@include box-shadow($dropdown-shadow);
+		}
+	}
+}
+
+.section-table {
+	td, th {
+		vertical-align: middle !important;
+		&:first-child { padding-left: $section-padding-large; }
+		&:last-child { padding-right: $section-padding-large; }
+	}
+	tbody {
+		td, th {
+			padding-top: 10px !important;
+			padding-bottom: 10px !important;
+		}
+	}
+}
+
+.section-tabs {
+	background: $silver;
+	box-shadow: inset 0 -1px 0 $outline;
+	border-radius: $border-radius-base $border-radius-base 0 0;
+	ul {
+		@include clean;
+		@include table(middle);
+
+		li {
+			a {
+				border-left: 1px solid transparent;
+				border-right: 1px solid transparent;
+				display: block;
+				color: $light;
+				text-align: center;
+				padding: $section-padding $section-padding ($section-padding+2);
+				&:hover {
+					color: $dark;
+				}
+				&.active {
+					color: $dark;
+					background: white;
+					border-color: $line;
+				}
+			}
+			&:first-child a { border-top-left-radius: $border-radius-base; border-left-width: 0; }
+			&:last-child a { border-top-right-radius: $border-radius-base; border-right-width: 0; }
+		}
+	}
+}
+
+.section-filter {
+	padding: 9px $section-padding-large 10px;
+	margin-bottom: -1px;
+	border-bottom: 1px solid $line;
+}
+
+.section-list {
+	ul {
+		@include clean;
+		li {
+			a {
+				display: block; 
+				padding: 9px $section-padding-large 10px;
+				border-top: 1px solid $line;
+				&:hover { background: $highlight; }
+				&.active { background: $blue; color: white; border-color: transparent; }
+			}
+			&:first-child a { border-width: 0; }
+		}
+	}
+}
+
+.section-label {
+	margin-bottom: $section-padding-large;
+}
+
+.section-header {
+	+ .section-filter {
+		padding-top: 0;
+		margin-top: -5px;
+	}
+}

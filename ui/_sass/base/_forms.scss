@@ -12,6 +12,12 @@
 	}
 }
 
+.form-group, .form-inline {
+	> *:not(:last-child) {
+		margin-right: 1em;
+	}
+}
+
 .help-block {
 	color: $light;
 	font-style: oblique;
@@ -37,7 +43,7 @@
 	}
 }
 
-$form-grid-padding: 6px;
+$form-grid-padding: 5px;
 
 .form-grid {
 	@include table-rows(top);
@@ -53,7 +59,9 @@ $form-grid-padding: 6px;
 			width: 1px;
 			label {
 				margin: 0;
-				padding: ( $padding-base-vertical + 1 ) 0;
+				@include labels;
+				color: $light;
+				padding: 10px 0 $padding-base-vertical;
 				&.text-large {
 					padding: ( $padding-large-vertical + 2 ) 0;
 				}

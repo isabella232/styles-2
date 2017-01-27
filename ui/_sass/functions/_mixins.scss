@@ -119,6 +119,15 @@ html .sntr, html.sntr body { @include font-size-base; }
   top: 0;
 }
 
+@mixin full() {
+  position: absolute;
+  display: block;
+  left: 0; 
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
 @mixin cover($offset: 0) {
   position: absolute;
   display: block;
@@ -140,7 +149,7 @@ html .sntr, html.sntr body { @include font-size-base; }
 
 @mixin circle() { border-radius: 50%; }
 @mixin round() { border-radius: $border-radius-base; }
-@mixin pill() { border-radius: 200px; }
+@mixin pill($important: null) { border-radius: 200px $important; }
 
 @mixin clear() { 
   &:after { 
@@ -363,6 +372,9 @@ html .sntr, html.sntr body { @include font-size-base; }
 @include keyframes(spinning) { 0% { @include transform(rotate(0)); } 100% {  @include transform(rotate(360deg)); } }
 @mixin spinning($duration:.5s,$timing: 0s) { @include animation(spinning $duration $timing linear infinite); }
 
+@include keyframes(pulsing) { 0% { @include transform(scale(1)); opacity: .5; } 20% { @include transform(scale(1.5)); opacity: 1; } 40% { @include transform(scale(1)); opacity: .5; } }
+@mixin pulsing($duration:2s,$timing: 0s) { @include animation(pulsing $duration $timing linear infinite); }
+
 @mixin background($hue:transparent){
   background: $hue no-repeat 50% 50%;
   background-size: cover;
@@ -372,11 +384,14 @@ html .sntr, html.sntr body { @include font-size-base; }
   position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;
 }
 
-@mixin labels (){
+@mixin labels($size:small){
   text-transform: uppercase;
-  font-size: 11px;
   font-weight: normal;
-  letter-spacing: .0875em;
+  font-weight: bold;
+  letter-spacing: .1em;
+  @if $size == small { font-size: 10px; }
+  @if $size == medium { font-size: 12px; }
+  @if $size == large { font-size: 13px; }
 }
 
 @mixin padding($type:0){
@@ -485,6 +500,12 @@ html .sntr, html.sntr body { @include font-size-base; }
   justify-content: center;
 }
 
+@mixin flex-justify(){
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+}
+
 @mixin flex-middle(){
   -webkit-align-items: center;
   -ms-align-items: center;
@@ -504,6 +525,12 @@ html .sntr, html.sntr body { @include font-size-base; }
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
+}
+
+@mixin flex-weight($grow:1){
+  -webkit-flex: $grow;
+  -ms-flex: $grow;
+  flex: $grow;
 }
 
 @mixin flexy($columns:2){
