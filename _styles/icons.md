@@ -4,452 +4,296 @@ type: styles
 section: images
 ---
 
-###### Arrows
+###### App Icons
 
-<span class="icon icon-arrow-back" title="icon-arrow-back"></span>
-<span class="icon icon-arrow-forward" title="icon-arrow-forward"></span>
-<span class="icon icon-arrow-down" title="icon-arrow-down"></span>
-<span class="icon icon-arrow-left" title="icon-arrow-left"></span>
-<span class="icon icon-arrow-right" title="icon-arrow-right"></span>
-<span class="icon icon-arrow-up" title="icon-arrow-up"></span>
-<span class="icon icon-arrow-maximise" title="icon-arrow-maximise"></span>
-<span class="icon icon-arrow-minimise" title="icon-arrow-minimise"></span>
-
----
-
-###### Processes
-
-<span class="icon icon-arrow-loop" title="icon-arrow-loop"></span>
-<span class="icon icon-arrow-repeat" title="icon-arrow-repeat"></span>
-<span class="icon icon-arrow-shuffle" title="icon-arrow-shuffle"></span>
-<span class="icon icon-arrow-sync" title="icon-arrow-sync"></span>
-<span class="icon icon-refresh" title="icon-refresh"></span>
-
----
-
-###### Status
-
-<span class="icon icon-media-fast-forward-outline" title="icon-media-fast-forward-outline"></span>
-<span class="icon icon-media-fast-forward" title="icon-media-fast-forward"></span>
-<span class="icon icon-media-pause-outline" title="icon-media-pause-outline"></span>
-<span class="icon icon-media-pause" title="icon-media-pause"></span>
-<span class="icon icon-media-play-outline" title="icon-media-play-outline"></span>
-<span class="icon icon-media-play-reverse-outline" title="icon-media-play-reverse-outline"></span>
-<span class="icon icon-media-play-reverse" title="icon-media-play-reverse"></span>
-<span class="icon icon-media-play" title="icon-media-play"></span>
-<span class="icon icon-media-record-outline" title="icon-media-record-outline"></span>
-<span class="icon icon-media-record" title="icon-media-record"></span>
-<span class="icon icon-media-rewind-outline" title="icon-media-rewind-outline"></span>
-<span class="icon icon-media-rewind" title="icon-media-rewind"></span>
-<span class="icon icon-media-stop-outline" title="icon-media-stop-outline"></span>
-<span class="icon icon-media-stop" title="icon-media-stop"></span>
-
----
-
-###### Editing
-
-<span class="icon icon-attachment" title="icon-attachment"></span>
-<span class="icon icon-keyboard" title="icon-keyboard"></span>
-<span class="icon icon-link" title="icon-link"></span>
-<span class="icon icon-folder-open" title="icon-folder-open"></span>
-<span class="icon icon-folder" title="icon-folder"></span>
-<span class="icon icon-document-add" title="icon-document-add"></span>
-<span class="icon icon-document-delete" title="icon-document-delete"></span>
-<span class="icon icon-document" title="icon-document"></span>
-<span class="icon icon-lock-closed" title="icon-lock-closed"></span>
-<span class="icon icon-lock-open" title="icon-lock-open"></span>
-<span class="icon icon-mail" title="icon-mail"></span>
-<span class="icon icon-message" title="icon-message"></span>
-<span class="icon icon-pencil" title="icon-pencil"></span>
-<span class="icon icon-filter" title="icon-filter"></span>
-<span class="icon icon-flag" title="icon-flag"></span>
-<span class="icon icon-tabs-outline" title="icon-tabs-outline"></span>
-<span class="icon icon-trash" title="icon-trash"></span>
-<span class="icon icon-cog" title="icon-cog"></span>
-<span class="icon icon-spanner" title="icon-spanner"></span>
-<span class="icon icon-pin" title="icon-pin"></span>
-
----
-
-###### Development
-
-<span class="icon icon-social-github" title="icon-social-github"></span>
-<span class="icon icon-flow-children" title="icon-flow-children"></span>
-<span class="icon icon-flow-merge" title="icon-flow-merge"></span>
-<span class="icon icon-flow-parallel" title="icon-flow-parallel"></span>
-<span class="icon icon-flow-switch" title="icon-flow-switch"></span>
-
----
-
-###### Symbols
-
-<span class="icon icon-eye" title="icon-eye"></span>
-<span class="icon icon-flash" title="icon-flash"></span>
-<span class="icon icon-home" title="icon-home"></span>
-<span class="icon icon-infinity" title="icon-infinity"></span>
-<span class="icon icon-key" title="icon-key"></span>
-<span class="icon icon-location-arrow" title="icon-location-arrow"></span>
-<span class="icon icon-point-of-interest" title="icon-point-of-interest"></span>
-<span class="icon icon-power" title="icon-power"></span>
-<span class="icon icon-delete-outline" title="icon-delete-outline"></span>
-<span class="icon icon-delete" title="icon-delete"></span>
-<span class="icon icon-eject" title="icon-eject"></span>
-<span class="icon icon-cancel" title="icon-cancel"></span>
-<span class="icon icon-times" title="icon-times"></span>
-<span class="icon icon-calendar" title="icon-calendar"></span>
-<span class="icon icon-chart-line" title="icon-chart-line"></span>
-<span class="icon icon-chart-pie" title="icon-chart-pie"></span>
-<span class="icon icon-cloud-storage" title="icon-cloud-storage"></span>
-<span class="icon icon-credit-card" title="icon-credit-card"></span>
-<span class="icon icon-database" title="icon-database"></span>
+<i data-icon="github" class="lg" data-toggle="tooltip" title="bitbucket" data-placement="right"></i>
+<i data-icon="bitbucket" class="lg" data-toggle="tooltip" title="bitbucket" data-placement="right"></i>
+<i data-icon="sinter" class="lg" data-toggle="tooltip" title="sinter" data-placement="right"></i>
 
 
----
-
-###### Users
-
-<span class="icon icon-user-add" title="icon-user-add"></span>
-<span class="icon icon-user-delete" title="icon-user-delete"></span>
-<span class="icon icon-user" title="icon-user"></span>
-
----
-
-###### Everything
-
-<span class="icon icon-adjust-brightness"></span>
-<span class="icon icon-adjust-contrast"></span>
-<span class="icon icon-anchor-outline"></span>
-<span class="icon icon-anchor"></span>
-<span class="icon icon-archive"></span>
-<span class="icon icon-arrow-back-outline"></span>
-<span class="icon icon-arrow-back"></span>
-<span class="icon icon-arrow-down-outline"></span>
-<span class="icon icon-arrow-down-thick"></span>
-<span class="icon icon-arrow-down"></span>
-<span class="icon icon-arrow-forward-outline"></span>
-<span class="icon icon-arrow-forward"></span>
-<span class="icon icon-arrow-left-outline"></span>
-<span class="icon icon-arrow-left-thick"></span>
-<span class="icon icon-arrow-left"></span>
-<span class="icon icon-arrow-loop-outline"></span>
-<span class="icon icon-arrow-loop"></span>
-<span class="icon icon-arrow-maximise-outline"></span>
-<span class="icon icon-arrow-maximise"></span>
-<span class="icon icon-arrow-minimise-outline"></span>
-<span class="icon icon-arrow-minimise"></span>
-<span class="icon icon-arrow-move-outline"></span>
-<span class="icon icon-arrow-move"></span>
-<span class="icon icon-arrow-repeat-outline"></span>
-<span class="icon icon-arrow-repeat"></span>
-<span class="icon icon-arrow-right-outline"></span>
-<span class="icon icon-arrow-right-thick"></span>
-<span class="icon icon-arrow-right"></span>
-<span class="icon icon-arrow-shuffle"></span>
-<span class="icon icon-arrow-sorted-down"></span>
-<span class="icon icon-arrow-sorted-up"></span>
-<span class="icon icon-arrow-sync-outline"></span>
-<span class="icon icon-arrow-sync"></span>
-<span class="icon icon-arrow-unsorted"></span>
-<span class="icon icon-arrow-up-outline"></span>
-<span class="icon icon-arrow-up-thick"></span>
-<span class="icon icon-arrow-up"></span>
-<span class="icon icon-at"></span>
-<span class="icon icon-attachment-outline"></span>
-<span class="icon icon-attachment"></span>
-<span class="icon icon-backspace-outline"></span>
-<span class="icon icon-backspace"></span>
-<span class="icon icon-battery-charge"></span>
-<span class="icon icon-battery-full"></span>
-<span class="icon icon-battery-high"></span>
-<span class="icon icon-battery-low"></span>
-<span class="icon icon-battery-mid"></span>
-<span class="icon icon-beaker"></span>
-<span class="icon icon-beer"></span>
-<span class="icon icon-bell"></span>
-<span class="icon icon-book"></span>
-<span class="icon icon-bookmark"></span>
-<span class="icon icon-briefcase"></span>
-<span class="icon icon-brush"></span>
-<span class="icon icon-business-card"></span>
-<span class="icon icon-calculator"></span>
-<span class="icon icon-calendar-outline"></span>
-<span class="icon icon-calendar"></span>
-<span class="icon icon-camera-outline"></span>
-<span class="icon icon-camera"></span>
-<span class="icon icon-cancel-outline"></span>
-<span class="icon icon-cancel"></span>
-<span class="icon icon-chart-area-outline"></span>
-<span class="icon icon-chart-area"></span>
-<span class="icon icon-chart-bar-outline"></span>
-<span class="icon icon-chart-bar"></span>
-<span class="icon icon-chart-line-outline"></span>
-<span class="icon icon-chart-line"></span>
-<span class="icon icon-chart-pie-outline"></span>
-<span class="icon icon-chart-pie"></span>
-<span class="icon icon-chevron-left-outline"></span>
-<span class="icon icon-chevron-left"></span>
-<span class="icon icon-chevron-right-outline"></span>
-<span class="icon icon-chevron-right"></span>
-<span class="icon icon-clipboard"></span>
-<span class="icon icon-cloud-storage"></span>
-<span class="icon icon-cloud-storage-outline"></span>
-<span class="icon icon-code-outline"></span>
-<span class="icon icon-code"></span>
-<span class="icon icon-coffee"></span>
-<span class="icon icon-cog-outline"></span>
-<span class="icon icon-cog"></span>
-<span class="icon icon-compass"></span>
-<span class="icon icon-contacts"></span>
-<span class="icon icon-credit-card"></span>
-<span class="icon icon-css3"></span>
-<span class="icon icon-database"></span>
-<span class="icon icon-delete-outline"></span>
-<span class="icon icon-delete"></span>
-<span class="icon icon-device-desktop"></span>
-<span class="icon icon-device-laptop"></span>
-<span class="icon icon-device-phone"></span>
-<span class="icon icon-device-tablet"></span>
-<span class="icon icon-directions"></span>
-<span class="icon icon-divide-outline"></span>
-<span class="icon icon-divide"></span>
-<span class="icon icon-document-add"></span>
-<span class="icon icon-document-delete"></span>
-<span class="icon icon-document-text"></span>
-<span class="icon icon-document"></span>
-<span class="icon icon-download-outline"></span>
-<span class="icon icon-download"></span>
-<span class="icon icon-dropbox"></span>
-<span class="icon icon-edit"></span>
-<span class="icon icon-eject-outline"></span>
-<span class="icon icon-eject"></span>
-<span class="icon icon-equals-outline"></span>
-<span class="icon icon-equals"></span>
-<span class="icon icon-export-outline"></span>
-<span class="icon icon-export"></span>
-<span class="icon icon-eye-outline"></span>
-<span class="icon icon-eye"></span>
-<span class="icon icon-feather"></span>
-<span class="icon icon-film"></span>
-<span class="icon icon-filter"></span>
-<span class="icon icon-flag-outline"></span>
-<span class="icon icon-flag"></span>
-<span class="icon icon-flash-outline"></span>
-<span class="icon icon-flash"></span>
-<span class="icon icon-flow-children"></span>
-<span class="icon icon-flow-merge"></span>
-<span class="icon icon-flow-parallel"></span>
-<span class="icon icon-flow-switch"></span>
-<span class="icon icon-folder-add"></span>
-<span class="icon icon-folder-delete"></span>
-<span class="icon icon-folder-open"></span>
-<span class="icon icon-folder"></span>
-<span class="icon icon-gift"></span>
-<span class="icon icon-globe-outline"></span>
-<span class="icon icon-globe"></span>
-<span class="icon icon-group-outline"></span>
-<span class="icon icon-group"></span>
-<span class="icon icon-headphones"></span>
-<span class="icon icon-heart-full-outline"></span>
-<span class="icon icon-heart-half-outline"></span>
-<span class="icon icon-heart-outline"></span>
-<span class="icon icon-heart"></span>
-<span class="icon icon-home-outline"></span>
-<span class="icon icon-home"></span>
-<span class="icon icon-html5"></span>
-<span class="icon icon-image-outline"></span>
-<span class="icon icon-image"></span>
-<span class="icon icon-infinity-outline"></span>
-<span class="icon icon-infinity"></span>
-<span class="icon icon-info-large-outline"></span>
-<span class="icon icon-info-large"></span>
-<span class="icon icon-info-outline"></span>
-<span class="icon icon-info"></span>
-<span class="icon icon-input-checked-outline"></span>
-<span class="icon icon-input-checked"></span>
-<span class="icon icon-key-outline"></span>
-<span class="icon icon-key"></span>
-<span class="icon icon-keyboard"></span>
-<span class="icon icon-leaf"></span>
-<span class="icon icon-lightbulb"></span>
-<span class="icon icon-link-outline"></span>
-<span class="icon icon-link"></span>
-<span class="icon icon-location-arrow-outline"></span>
-<span class="icon icon-location-arrow"></span>
-<span class="icon icon-location-outline"></span>
-<span class="icon icon-location"></span>
-<span class="icon icon-lock-closed-outline"></span>
-<span class="icon icon-lock-closed"></span>
-<span class="icon icon-lock-open-outline"></span>
-<span class="icon icon-lock-open"></span>
-<span class="icon icon-mail"></span>
-<span class="icon icon-map"></span>
-<span class="icon icon-media-eject-outline"></span>
-<span class="icon icon-media-eject"></span>
-<span class="icon icon-media-fast-forward-outline"></span>
-<span class="icon icon-media-fast-forward"></span>
-<span class="icon icon-media-pause-outline"></span>
-<span class="icon icon-media-pause"></span>
-<span class="icon icon-media-play-outline"></span>
-<span class="icon icon-media-play-reverse-outline"></span>
-<span class="icon icon-media-play-reverse"></span>
-<span class="icon icon-media-play"></span>
-<span class="icon icon-media-record-outline"></span>
-<span class="icon icon-media-record"></span>
-<span class="icon icon-media-rewind-outline"></span>
-<span class="icon icon-media-rewind"></span>
-<span class="icon icon-media-stop-outline"></span>
-<span class="icon icon-media-stop"></span>
-<span class="icon icon-message-typing"></span>
-<span class="icon icon-message"></span>
-<span class="icon icon-messages"></span>
-<span class="icon icon-microphone-outline"></span>
-<span class="icon icon-microphone"></span>
-<span class="icon icon-minus-outline"></span>
-<span class="icon icon-minus"></span>
-<span class="icon icon-mortar-board"></span>
-<span class="icon icon-news"></span>
-<span class="icon icon-notes-outline"></span>
-<span class="icon icon-notes"></span>
-<span class="icon icon-pen"></span>
-<span class="icon icon-pencil"></span>
-<span class="icon icon-phone-outline"></span>
-<span class="icon icon-phone"></span>
-<span class="icon icon-pi-outline"></span>
-<span class="icon icon-pi"></span>
-<span class="icon icon-pin-outline"></span>
-<span class="icon icon-pin"></span>
-<span class="icon icon-pipette"></span>
-<span class="icon icon-plane-outline"></span>
-<span class="icon icon-plane"></span>
-<span class="icon icon-plug"></span>
-<span class="icon icon-plus-outline"></span>
-<span class="icon icon-plus"></span>
-<span class="icon icon-point-of-interest-outline"></span>
-<span class="icon icon-point-of-interest"></span>
-<span class="icon icon-power-outline"></span>
-<span class="icon icon-power"></span>
-<span class="icon icon-printer"></span>
-<span class="icon icon-puzzle-outline"></span>
-<span class="icon icon-puzzle"></span>
-<span class="icon icon-radar-outline"></span>
-<span class="icon icon-radar"></span>
-<span class="icon icon-refresh-outline"></span>
-<span class="icon icon-refresh"></span>
-<span class="icon icon-rss-outline"></span>
-<span class="icon icon-rss"></span>
-<span class="icon icon-scissors-outline"></span>
-<span class="icon icon-scissors"></span>
-<span class="icon icon-shopping-bag"></span>
-<span class="icon icon-shopping-cart"></span>
-<span class="icon icon-social-at-circular"></span>
-<span class="icon icon-social-dribbble-circular"></span>
-<span class="icon icon-social-dribbble"></span>
-<span class="icon icon-social-facebook-circular"></span>
-<span class="icon icon-social-facebook"></span>
-<span class="icon icon-social-flickr-circular"></span>
-<span class="icon icon-social-flickr"></span>
-<span class="icon icon-social-github-circular"></span>
-<span class="icon icon-social-github"></span>
-<span class="icon icon-social-google-plus-circular"></span>
-<span class="icon icon-social-google-plus"></span>
-<span class="icon icon-social-instagram-circular"></span>
-<span class="icon icon-social-instagram"></span>
-<span class="icon icon-social-last-fm-circular"></span>
-<span class="icon icon-social-last-fm"></span>
-<span class="icon icon-social-linkedin-circular"></span>
-<span class="icon icon-social-linkedin"></span>
-<span class="icon icon-social-pinterest-circular"></span>
-<span class="icon icon-social-pinterest"></span>
-<span class="icon icon-social-skype-outline"></span>
-<span class="icon icon-social-skype"></span>
-<span class="icon icon-social-tumbler-circular"></span>
-<span class="icon icon-social-tumbler"></span>
-<span class="icon icon-social-twitter-circular"></span>
-<span class="icon icon-social-twitter"></span>
-<span class="icon icon-social-vimeo-circular"></span>
-<span class="icon icon-social-vimeo"></span>
-<span class="icon icon-social-youtube-circular"></span>
-<span class="icon icon-social-youtube"></span>
-<span class="icon icon-sort-alphabetically-outline"></span>
-<span class="icon icon-sort-alphabetically"></span>
-<span class="icon icon-sort-numerically-outline"></span>
-<span class="icon icon-sort-numerically"></span>
-<span class="icon icon-spanner-outline"></span>
-<span class="icon icon-spanner"></span>
-<span class="icon icon-spiral"></span>
-<span class="icon icon-star-full-outline"></span>
-<span class="icon icon-star-half-outline"></span>
-<span class="icon icon-star-half"></span>
-<span class="icon icon-star-outline"></span>
-<span class="icon icon-star"></span>
-<span class="icon icon-starburst-outline"></span>
-<span class="icon icon-starburst"></span>
-<span class="icon icon-stopwatch"></span>
-<span class="icon icon-support"></span>
-<span class="icon icon-tabs-outline"></span>
-<span class="icon icon-tag"></span>
-<span class="icon icon-tags"></span>
-<span class="icon icon-th-large-outline"></span>
-<span class="icon icon-th-large"></span>
-<span class="icon icon-th-list-outline"></span>
-<span class="icon icon-th-list"></span>
-<span class="icon icon-th-menu-outline"></span>
-<span class="icon icon-th-menu"></span>
-<span class="icon icon-th-small-outline"></span>
-<span class="icon icon-th-small"></span>
-<span class="icon icon-thermometer"></span>
-<span class="icon icon-thumbs-down"></span>
-<span class="icon icon-thumbs-ok"></span>
-<span class="icon icon-thumbs-up"></span>
-<span class="icon icon-tick-outline"></span>
-<span class="icon icon-tick"></span>
-<span class="icon icon-ticket"></span>
-<span class="icon icon-time"></span>
-<span class="icon icon-times-outline"></span>
-<span class="icon icon-times"></span>
-<span class="icon icon-trash"></span>
-<span class="icon icon-tree"></span>
-<span class="icon icon-upload-outline"></span>
-<span class="icon icon-upload"></span>
-<span class="icon icon-user-add-outline"></span>
-<span class="icon icon-user-add"></span>
-<span class="icon icon-user-delete-outline"></span>
-<span class="icon icon-user-delete"></span>
-<span class="icon icon-user-outline"></span>
-<span class="icon icon-user"></span>
-<span class="icon icon-vendor-android"></span>
-<span class="icon icon-vendor-apple"></span>
-<span class="icon icon-vendor-microsoft"></span>
-<span class="icon icon-video-outline"></span>
-<span class="icon icon-video"></span>
-<span class="icon icon-volume-down"></span>
-<span class="icon icon-volume-mute"></span>
-<span class="icon icon-volume-up"></span>
-<span class="icon icon-volume"></span>
-<span class="icon icon-warning-outline"></span>
-<span class="icon icon-warning"></span>
-<span class="icon icon-watch"></span>
-<span class="icon icon-waves-outline"></span>
-<span class="icon icon-waves"></span>
-<span class="icon icon-weather-cloudy"></span>
-<span class="icon icon-weather-downpour"></span>
-<span class="icon icon-weather-night"></span>
-<span class="icon icon-weather-partly-sunny"></span>
-<span class="icon icon-weather-shower"></span>
-<span class="icon icon-weather-snow"></span>
-<span class="icon icon-weather-stormy"></span>
-<span class="icon icon-weather-sunny"></span>
-<span class="icon icon-weather-windy-cloudy"></span>
-<span class="icon icon-weather-windy"></span>
-<span class="icon icon-wi-fi-outline"></span>
-<span class="icon icon-wi-fi"></span>
-<span class="icon icon-wine"></span>
-<span class="icon icon-world-outline"></span>
-<span class="icon icon-world"></span>
-<span class="icon icon-zoom-in-outline"></span>
-<span class="icon icon-zoom-in"></span>
-<span class="icon icon-zoom-out-outline"></span>
-<span class="icon icon-zoom-out"></span>
-<span class="icon icon-zoom-outline"></span>
-<span class="icon icon-zoom"></span>
-
+<div style="line-height: 3; letter-spacing: 16px;">
+<i data-icon="note" data-toggle="tooltip" title="note" data-placement="right"></i>
+<i data-icon="logo-db" data-toggle="tooltip" title="logo-db" data-placement="right"></i>
+<i data-icon="music" data-toggle="tooltip" title="music" data-placement="right"></i>
+<i data-icon="search" data-toggle="tooltip" title="search" data-placement="right"></i>
+<i data-icon="flashlight" data-toggle="tooltip" title="flashlight" data-placement="right"></i>
+<i data-icon="mail" data-toggle="tooltip" title="mail" data-placement="right"></i>
+<i data-icon="heart" data-toggle="tooltip" title="heart" data-placement="right"></i>
+<i data-icon="heart-empty" data-toggle="tooltip" title="heart-empty" data-placement="right"></i>
+<i data-icon="star" data-toggle="tooltip" title="star" data-placement="right"></i>
+<i data-icon="star-empty" data-toggle="tooltip" title="star-empty" data-placement="right"></i>
+<i data-icon="user" data-toggle="tooltip" title="user" data-placement="right"></i>
+<i data-icon="users" data-toggle="tooltip" title="users" data-placement="right"></i>
+<i data-icon="user-add" data-toggle="tooltip" title="user-add" data-placement="right"></i>
+<i data-icon="video" data-toggle="tooltip" title="video" data-placement="right"></i>
+<i data-icon="picture" data-toggle="tooltip" title="picture" data-placement="right"></i>
+<i data-icon="camera" data-toggle="tooltip" title="camera" data-placement="right"></i>
+<i data-icon="layout" data-toggle="tooltip" title="layout" data-placement="right"></i>
+<i data-icon="menu" data-toggle="tooltip" title="menu" data-placement="right"></i>
+<i data-icon="check" data-toggle="tooltip" title="check" data-placement="right"></i>
+<i data-icon="cancel" data-toggle="tooltip" title="cancel" data-placement="right"></i>
+<i data-icon="cancel-circled" data-toggle="tooltip" title="cancel-circled" data-placement="right"></i>
+<i data-icon="cancel-squared" data-toggle="tooltip" title="cancel-squared" data-placement="right"></i>
+<i data-icon="plus" data-toggle="tooltip" title="plus" data-placement="right"></i>
+<i data-icon="plus-circled" data-toggle="tooltip" title="plus-circled" data-placement="right"></i>
+<i data-icon="plus-squared" data-toggle="tooltip" title="plus-squared" data-placement="right"></i>
+<i data-icon="minus" data-toggle="tooltip" title="minus" data-placement="right"></i>
+<i data-icon="minus-circled" data-toggle="tooltip" title="minus-circled" data-placement="right"></i>
+<i data-icon="minus-squared" data-toggle="tooltip" title="minus-squared" data-placement="right"></i>
+<i data-icon="help" data-toggle="tooltip" title="help" data-placement="right"></i>
+<i data-icon="help-circled" data-toggle="tooltip" title="help-circled" data-placement="right"></i>
+<i data-icon="info" data-toggle="tooltip" title="info" data-placement="right"></i>
+<i data-icon="info-circled" data-toggle="tooltip" title="info-circled" data-placement="right"></i>
+<i data-icon="back" data-toggle="tooltip" title="back" data-placement="right"></i>
+<i data-icon="home" data-toggle="tooltip" title="home" data-placement="right"></i>
+<i data-icon="link" data-toggle="tooltip" title="link" data-placement="right"></i>
+<i data-icon="attach" data-toggle="tooltip" title="attach" data-placement="right"></i>
+<i data-icon="lock" data-toggle="tooltip" title="lock" data-placement="right"></i>
+<i data-icon="lock-open" data-toggle="tooltip" title="lock-open" data-placement="right"></i>
+<i data-icon="eye" data-toggle="tooltip" title="eye" data-placement="right"></i>
+<i data-icon="tag" data-toggle="tooltip" title="tag" data-placement="right"></i>
+<i data-icon="bookmark" data-toggle="tooltip" title="bookmark" data-placement="right"></i>
+<i data-icon="bookmarks" data-toggle="tooltip" title="bookmarks" data-placement="right"></i>
+<i data-icon="flag" data-toggle="tooltip" title="flag" data-placement="right"></i>
+<i data-icon="thumbs-up" data-toggle="tooltip" title="thumbs-up" data-placement="right"></i>
+<i data-icon="thumbs-down" data-toggle="tooltip" title="thumbs-down" data-placement="right"></i>
+<i data-icon="download" data-toggle="tooltip" title="download" data-placement="right"></i>
+<i data-icon="upload" data-toggle="tooltip" title="upload" data-placement="right"></i>
+<i data-icon="upload-cloud" data-toggle="tooltip" title="upload-cloud" data-placement="right"></i>
+<i data-icon="reply" data-toggle="tooltip" title="reply" data-placement="right"></i>
+<i data-icon="reply-all" data-toggle="tooltip" title="reply-all" data-placement="right"></i>
+<i data-icon="forward" data-toggle="tooltip" title="forward" data-placement="right"></i>
+<i data-icon="quote" data-toggle="tooltip" title="quote" data-placement="right"></i>
+<i data-icon="code" data-toggle="tooltip" title="code" data-placement="right"></i>
+<i data-icon="export" data-toggle="tooltip" title="export" data-placement="right"></i>
+<i data-icon="pencil" data-toggle="tooltip" title="pencil" data-placement="right"></i>
+<i data-icon="feather" data-toggle="tooltip" title="feather" data-placement="right"></i>
+<i data-icon="print" data-toggle="tooltip" title="print" data-placement="right"></i>
+<i data-icon="retweet" data-toggle="tooltip" title="retweet" data-placement="right"></i>
+<i data-icon="keyboard" data-toggle="tooltip" title="keyboard" data-placement="right"></i>
+<i data-icon="comment" data-toggle="tooltip" title="comment" data-placement="right"></i>
+<i data-icon="chat" data-toggle="tooltip" title="chat" data-placement="right"></i>
+<i data-icon="bell" data-toggle="tooltip" title="bell" data-placement="right"></i>
+<i data-icon="attention" data-toggle="tooltip" title="attention" data-placement="right"></i>
+<i data-icon="alert" data-toggle="tooltip" title="alert" data-placement="right"></i>
+<i data-icon="vcard" data-toggle="tooltip" title="vcard" data-placement="right"></i>
+<i data-icon="address" data-toggle="tooltip" title="address" data-placement="right"></i>
+<i data-icon="location" data-toggle="tooltip" title="location" data-placement="right"></i>
+<i data-icon="map" data-toggle="tooltip" title="map" data-placement="right"></i>
+<i data-icon="direction" data-toggle="tooltip" title="direction" data-placement="right"></i>
+<i data-icon="compass" data-toggle="tooltip" title="compass" data-placement="right"></i>
+<i data-icon="cup" data-toggle="tooltip" title="cup" data-placement="right"></i>
+<i data-icon="trash" data-toggle="tooltip" title="trash" data-placement="right"></i>
+<i data-icon="doc" data-toggle="tooltip" title="doc" data-placement="right"></i>
+<i data-icon="docs" data-toggle="tooltip" title="docs" data-placement="right"></i>
+<i data-icon="doc-landscape" data-toggle="tooltip" title="doc-landscape" data-placement="right"></i>
+<i data-icon="doc-text" data-toggle="tooltip" title="doc-text" data-placement="right"></i>
+<i data-icon="doc-text-inv" data-toggle="tooltip" title="doc-text-inv" data-placement="right"></i>
+<i data-icon="newspaper" data-toggle="tooltip" title="newspaper" data-placement="right"></i>
+<i data-icon="book-open" data-toggle="tooltip" title="book-open" data-placement="right"></i>
+<i data-icon="book" data-toggle="tooltip" title="book" data-placement="right"></i>
+<i data-icon="folder" data-toggle="tooltip" title="folder" data-placement="right"></i>
+<i data-icon="archive" data-toggle="tooltip" title="archive" data-placement="right"></i>
+<i data-icon="box" data-toggle="tooltip" title="box" data-placement="right"></i>
+<i data-icon="rss" data-toggle="tooltip" title="rss" data-placement="right"></i>
+<i data-icon="phone" data-toggle="tooltip" title="phone" data-placement="right"></i>
+<i data-icon="cog" data-toggle="tooltip" title="cog" data-placement="right"></i>
+<i data-icon="tools" data-toggle="tooltip" title="tools" data-placement="right"></i>
+<i data-icon="share" data-toggle="tooltip" title="share" data-placement="right"></i>
+<i data-icon="shareable" data-toggle="tooltip" title="shareable" data-placement="right"></i>
+<i data-icon="basket" data-toggle="tooltip" title="basket" data-placement="right"></i>
+<i data-icon="bag" data-toggle="tooltip" title="bag" data-placement="right"></i>
+<i data-icon="calendar" data-toggle="tooltip" title="calendar" data-placement="right"></i>
+<i data-icon="login" data-toggle="tooltip" title="login" data-placement="right"></i>
+<i data-icon="logout" data-toggle="tooltip" title="logout" data-placement="right"></i>
+<i data-icon="mic" data-toggle="tooltip" title="mic" data-placement="right"></i>
+<i data-icon="mute" data-toggle="tooltip" title="mute" data-placement="right"></i>
+<i data-icon="sound" data-toggle="tooltip" title="sound" data-placement="right"></i>
+<i data-icon="volume" data-toggle="tooltip" title="volume" data-placement="right"></i>
+<i data-icon="clock" data-toggle="tooltip" title="clock" data-placement="right"></i>
+<i data-icon="hourglass" data-toggle="tooltip" title="hourglass" data-placement="right"></i>
+<i data-icon="lamp" data-toggle="tooltip" title="lamp" data-placement="right"></i>
+<i data-icon="light-down" data-toggle="tooltip" title="light-down" data-placement="right"></i>
+<i data-icon="light-up" data-toggle="tooltip" title="light-up" data-placement="right"></i>
+<i data-icon="adjust" data-toggle="tooltip" title="adjust" data-placement="right"></i>
+<i data-icon="block" data-toggle="tooltip" title="block" data-placement="right"></i>
+<i data-icon="resize-full" data-toggle="tooltip" title="resize-full" data-placement="right"></i>
+<i data-icon="resize-small" data-toggle="tooltip" title="resize-small" data-placement="right"></i>
+<i data-icon="popup" data-toggle="tooltip" title="popup" data-placement="right"></i>
+<i data-icon="publish" data-toggle="tooltip" title="publish" data-placement="right"></i>
+<i data-icon="window" data-toggle="tooltip" title="window" data-placement="right"></i>
+<i data-icon="arrow-combo" data-toggle="tooltip" title="arrow-combo" data-placement="right"></i>
+<i data-icon="down-circled" data-toggle="tooltip" title="down-circled" data-placement="right"></i>
+<i data-icon="left-circled" data-toggle="tooltip" title="left-circled" data-placement="right"></i>
+<i data-icon="right-circled" data-toggle="tooltip" title="right-circled" data-placement="right"></i>
+<i data-icon="up-circled" data-toggle="tooltip" title="up-circled" data-placement="right"></i>
+<i data-icon="down-open" data-toggle="tooltip" title="down-open" data-placement="right"></i>
+<i data-icon="left-open" data-toggle="tooltip" title="left-open" data-placement="right"></i>
+<i data-icon="right-open" data-toggle="tooltip" title="right-open" data-placement="right"></i>
+<i data-icon="up-open" data-toggle="tooltip" title="up-open" data-placement="right"></i>
+<i data-icon="down-open-mini" data-toggle="tooltip" title="down-open-mini" data-placement="right"></i>
+<i data-icon="left-open-mini" data-toggle="tooltip" title="left-open-mini" data-placement="right"></i>
+<i data-icon="right-open-mini" data-toggle="tooltip" title="right-open-mini" data-placement="right"></i>
+<i data-icon="up-open-mini" data-toggle="tooltip" title="up-open-mini" data-placement="right"></i>
+<i data-icon="down-open-big" data-toggle="tooltip" title="down-open-big" data-placement="right"></i>
+<i data-icon="left-open-big" data-toggle="tooltip" title="left-open-big" data-placement="right"></i>
+<i data-icon="right-open-big" data-toggle="tooltip" title="right-open-big" data-placement="right"></i>
+<i data-icon="up-open-big" data-toggle="tooltip" title="up-open-big" data-placement="right"></i>
+<i data-icon="down" data-toggle="tooltip" title="down" data-placement="right"></i>
+<i data-icon="left" data-toggle="tooltip" title="left" data-placement="right"></i>
+<i data-icon="right" data-toggle="tooltip" title="right" data-placement="right"></i>
+<i data-icon="up" data-toggle="tooltip" title="up" data-placement="right"></i>
+<i data-icon="down-dir" data-toggle="tooltip" title="down-dir" data-placement="right"></i>
+<i data-icon="left-dir" data-toggle="tooltip" title="left-dir" data-placement="right"></i>
+<i data-icon="right-dir" data-toggle="tooltip" title="right-dir" data-placement="right"></i>
+<i data-icon="up-dir" data-toggle="tooltip" title="up-dir" data-placement="right"></i>
+<i data-icon="down-bold" data-toggle="tooltip" title="down-bold" data-placement="right"></i>
+<i data-icon="left-bold" data-toggle="tooltip" title="left-bold" data-placement="right"></i>
+<i data-icon="right-bold" data-toggle="tooltip" title="right-bold" data-placement="right"></i>
+<i data-icon="up-bold" data-toggle="tooltip" title="up-bold" data-placement="right"></i>
+<i data-icon="down-thin" data-toggle="tooltip" title="down-thin" data-placement="right"></i>
+<i data-icon="left-thin" data-toggle="tooltip" title="left-thin" data-placement="right"></i>
+<i data-icon="note-beamed" data-toggle="tooltip" title="note-beamed" data-placement="right"></i>
+<i data-icon="up-thin" data-toggle="tooltip" title="up-thin" data-placement="right"></i>
+<i data-icon="cw" data-toggle="tooltip" title="cw" data-placement="right"></i>
+<i data-icon="arrows-ccw" data-toggle="tooltip" title="arrows-ccw" data-placement="right"></i>
+<i data-icon="level-down" data-toggle="tooltip" title="level-down" data-placement="right"></i>
+<i data-icon="level-up" data-toggle="tooltip" title="level-up" data-placement="right"></i>
+<i data-icon="shuffle" data-toggle="tooltip" title="shuffle" data-placement="right"></i>
+<i data-icon="loop" data-toggle="tooltip" title="loop" data-placement="right"></i>
+<i data-icon="switch" data-toggle="tooltip" title="switch" data-placement="right"></i>
+<i data-icon="play" data-toggle="tooltip" title="play" data-placement="right"></i>
+<i data-icon="stop" data-toggle="tooltip" title="stop" data-placement="right"></i>
+<i data-icon="pause" data-toggle="tooltip" title="pause" data-placement="right"></i>
+<i data-icon="record" data-toggle="tooltip" title="record" data-placement="right"></i>
+<i data-icon="to-end" data-toggle="tooltip" title="to-end" data-placement="right"></i>
+<i data-icon="to-start" data-toggle="tooltip" title="to-start" data-placement="right"></i>
+<i data-icon="fast-forward" data-toggle="tooltip" title="fast-forward" data-placement="right"></i>
+<i data-icon="fast-backward" data-toggle="tooltip" title="fast-backward" data-placement="right"></i>
+<i data-icon="progress-0" data-toggle="tooltip" title="progress-0" data-placement="right"></i>
+<i data-icon="progress-1" data-toggle="tooltip" title="progress-1" data-placement="right"></i>
+<i data-icon="progress-2" data-toggle="tooltip" title="progress-2" data-placement="right"></i>
+<i data-icon="progress-3" data-toggle="tooltip" title="progress-3" data-placement="right"></i>
+<i data-icon="target" data-toggle="tooltip" title="target" data-placement="right"></i>
+<i data-icon="palette" data-toggle="tooltip" title="palette" data-placement="right"></i>
+<i data-icon="list" data-toggle="tooltip" title="list" data-placement="right"></i>
+<i data-icon="list-add" data-toggle="tooltip" title="list-add" data-placement="right"></i>
+<i data-icon="signal" data-toggle="tooltip" title="signal" data-placement="right"></i>
+<i data-icon="trophy" data-toggle="tooltip" title="trophy" data-placement="right"></i>
+<i data-icon="battery" data-toggle="tooltip" title="battery" data-placement="right"></i>
+<i data-icon="back-in-time" data-toggle="tooltip" title="back-in-time" data-placement="right"></i>
+<i data-icon="monitor" data-toggle="tooltip" title="monitor" data-placement="right"></i>
+<i data-icon="mobile" data-toggle="tooltip" title="mobile" data-placement="right"></i>
+<i data-icon="network" data-toggle="tooltip" title="network" data-placement="right"></i>
+<i data-icon="cd" data-toggle="tooltip" title="cd" data-placement="right"></i>
+<i data-icon="inbox" data-toggle="tooltip" title="inbox" data-placement="right"></i>
+<i data-icon="install" data-toggle="tooltip" title="install" data-placement="right"></i>
+<i data-icon="globe" data-toggle="tooltip" title="globe" data-placement="right"></i>
+<i data-icon="cloud" data-toggle="tooltip" title="cloud" data-placement="right"></i>
+<i data-icon="cloud-thunder" data-toggle="tooltip" title="cloud-thunder" data-placement="right"></i>
+<i data-icon="flash" data-toggle="tooltip" title="flash" data-placement="right"></i>
+<i data-icon="moon" data-toggle="tooltip" title="moon" data-placement="right"></i>
+<i data-icon="flight" data-toggle="tooltip" title="flight" data-placement="right"></i>
+<i data-icon="paper-plane" data-toggle="tooltip" title="paper-plane" data-placement="right"></i>
+<i data-icon="leaf" data-toggle="tooltip" title="leaf" data-placement="right"></i>
+<i data-icon="lifebuoy" data-toggle="tooltip" title="lifebuoy" data-placement="right"></i>
+<i data-icon="mouse" data-toggle="tooltip" title="mouse" data-placement="right"></i>
+<i data-icon="briefcase" data-toggle="tooltip" title="briefcase" data-placement="right"></i>
+<i data-icon="suitcase" data-toggle="tooltip" title="suitcase" data-placement="right"></i>
+<i data-icon="dot" data-toggle="tooltip" title="dot" data-placement="right"></i>
+<i data-icon="dot-2" data-toggle="tooltip" title="dot-2" data-placement="right"></i>
+<i data-icon="dot-3" data-toggle="tooltip" title="dot-3" data-placement="right"></i>
+<i data-icon="brush" data-toggle="tooltip" title="brush" data-placement="right"></i>
+<i data-icon="magnet" data-toggle="tooltip" title="magnet" data-placement="right"></i>
+<i data-icon="infinity" data-toggle="tooltip" title="infinity" data-placement="right"></i>
+<i data-icon="erase" data-toggle="tooltip" title="erase" data-placement="right"></i>
+<i data-icon="chart-pie" data-toggle="tooltip" title="chart-pie" data-placement="right"></i>
+<i data-icon="chart-line" data-toggle="tooltip" title="chart-line" data-placement="right"></i>
+<i data-icon="chart-bar" data-toggle="tooltip" title="chart-bar" data-placement="right"></i>
+<i data-icon="chart-area" data-toggle="tooltip" title="chart-area" data-placement="right"></i>
+<i data-icon="tape" data-toggle="tooltip" title="tape" data-placement="right"></i>
+<i data-icon="graduation-cap" data-toggle="tooltip" title="graduation-cap" data-placement="right"></i>
+<i data-icon="language" data-toggle="tooltip" title="language" data-placement="right"></i>
+<i data-icon="ticket" data-toggle="tooltip" title="ticket" data-placement="right"></i>
+<i data-icon="water" data-toggle="tooltip" title="water" data-placement="right"></i>
+<i data-icon="droplet" data-toggle="tooltip" title="droplet" data-placement="right"></i>
+<i data-icon="air" data-toggle="tooltip" title="air" data-placement="right"></i>
+<i data-icon="credit-card" data-toggle="tooltip" title="credit-card" data-placement="right"></i>
+<i data-icon="floppy" data-toggle="tooltip" title="floppy" data-placement="right"></i>
+<i data-icon="clipboard" data-toggle="tooltip" title="clipboard" data-placement="right"></i>
+<i data-icon="megaphone" data-toggle="tooltip" title="megaphone" data-placement="right"></i>
+<i data-icon="database" data-toggle="tooltip" title="database" data-placement="right"></i>
+<i data-icon="drive" data-toggle="tooltip" title="drive" data-placement="right"></i>
+<i data-icon="bucket" data-toggle="tooltip" title="bucket" data-placement="right"></i>
+<i data-icon="thermometer" data-toggle="tooltip" title="thermometer" data-placement="right"></i>
+<i data-icon="key" data-toggle="tooltip" title="key" data-placement="right"></i>
+<i data-icon="flow-cascade" data-toggle="tooltip" title="flow-cascade" data-placement="right"></i>
+<i data-icon="flow-branch" data-toggle="tooltip" title="flow-branch" data-placement="right"></i>
+<i data-icon="flow-tree" data-toggle="tooltip" title="flow-tree" data-placement="right"></i>
+<i data-icon="flow-line" data-toggle="tooltip" title="flow-line" data-placement="right"></i>
+<i data-icon="flow-parallel" data-toggle="tooltip" title="flow-parallel" data-placement="right"></i>
+<i data-icon="rocket" data-toggle="tooltip" title="rocket" data-placement="right"></i>
+<i data-icon="gauge" data-toggle="tooltip" title="gauge" data-placement="right"></i>
+<i data-icon="traffic-cone" data-toggle="tooltip" title="traffic-cone" data-placement="right"></i>
+<i data-icon="cc" data-toggle="tooltip" title="cc" data-placement="right"></i>
+<i data-icon="cc-by" data-toggle="tooltip" title="cc-by" data-placement="right"></i>
+<i data-icon="cc-nc" data-toggle="tooltip" title="cc-nc" data-placement="right"></i>
+<i data-icon="cc-nc-eu" data-toggle="tooltip" title="cc-nc-eu" data-placement="right"></i>
+<i data-icon="cc-nc-jp" data-toggle="tooltip" title="cc-nc-jp" data-placement="right"></i>
+<i data-icon="cc-sa" data-toggle="tooltip" title="cc-sa" data-placement="right"></i>
+<i data-icon="cc-nd" data-toggle="tooltip" title="cc-nd" data-placement="right"></i>
+<i data-icon="cc-pd" data-toggle="tooltip" title="cc-pd" data-placement="right"></i>
+<i data-icon="cc-zero" data-toggle="tooltip" title="cc-zero" data-placement="right"></i>
+<i data-icon="cc-share" data-toggle="tooltip" title="cc-share" data-placement="right"></i>
+<i data-icon="cc-remix" data-toggle="tooltip" title="cc-remix" data-placement="right"></i>
+<i data-icon="github" data-toggle="tooltip" title="github" data-placement="right"></i>
+<i data-icon="github-circled" data-toggle="tooltip" title="github-circled" data-placement="right"></i>
+<i data-icon="flickr" data-toggle="tooltip" title="flickr" data-placement="right"></i>
+<i data-icon="flickr-circled" data-toggle="tooltip" title="flickr-circled" data-placement="right"></i>
+<i data-icon="vimeo" data-toggle="tooltip" title="vimeo" data-placement="right"></i>
+<i data-icon="vimeo-circled" data-toggle="tooltip" title="vimeo-circled" data-placement="right"></i>
+<i data-icon="twitter" data-toggle="tooltip" title="twitter" data-placement="right"></i>
+<i data-icon="twitter-circled" data-toggle="tooltip" title="twitter-circled" data-placement="right"></i>
+<i data-icon="facebook" data-toggle="tooltip" title="facebook" data-placement="right"></i>
+<i data-icon="facebook-circled" data-toggle="tooltip" title="facebook-circled" data-placement="right"></i>
+<i data-icon="facebook-squared" data-toggle="tooltip" title="facebook-squared" data-placement="right"></i>
+<i data-icon="gplus" data-toggle="tooltip" title="gplus" data-placement="right"></i>
+<i data-icon="gplus-circled" data-toggle="tooltip" title="gplus-circled" data-placement="right"></i>
+<i data-icon="pinterest" data-toggle="tooltip" title="pinterest" data-placement="right"></i>
+<i data-icon="pinterest-circled" data-toggle="tooltip" title="pinterest-circled" data-placement="right"></i>
+<i data-icon="tumblr" data-toggle="tooltip" title="tumblr" data-placement="right"></i>
+<i data-icon="tumblr-circled" data-toggle="tooltip" title="tumblr-circled" data-placement="right"></i>
+<i data-icon="linkedin" data-toggle="tooltip" title="linkedin" data-placement="right"></i>
+<i data-icon="linkedin-circled" data-toggle="tooltip" title="linkedin-circled" data-placement="right"></i>
+<i data-icon="dribbble" data-toggle="tooltip" title="dribbble" data-placement="right"></i>
+<i data-icon="dribbble-circled" data-toggle="tooltip" title="dribbble-circled" data-placement="right"></i>
+<i data-icon="stumbleupon" data-toggle="tooltip" title="stumbleupon" data-placement="right"></i>
+<i data-icon="stumbleupon-circled" data-toggle="tooltip" title="stumbleupon-circled" data-placement="right"></i>
+<i data-icon="lastfm" data-toggle="tooltip" title="lastfm" data-placement="right"></i>
+<i data-icon="lastfm-circled" data-toggle="tooltip" title="lastfm-circled" data-placement="right"></i>
+<i data-icon="rdio" data-toggle="tooltip" title="rdio" data-placement="right"></i>
+<i data-icon="rdio-circled" data-toggle="tooltip" title="rdio-circled" data-placement="right"></i>
+<i data-icon="spotify" data-toggle="tooltip" title="spotify" data-placement="right"></i>
+<i data-icon="spotify-circled" data-toggle="tooltip" title="spotify-circled" data-placement="right"></i>
+<i data-icon="qq" data-toggle="tooltip" title="qq" data-placement="right"></i>
+<i data-icon="instagram" data-toggle="tooltip" title="instagram" data-placement="right"></i>
+<i data-icon="dropbox" data-toggle="tooltip" title="dropbox" data-placement="right"></i>
+<i data-icon="evernote" data-toggle="tooltip" title="evernote" data-placement="right"></i>
+<i data-icon="flattr" data-toggle="tooltip" title="flattr" data-placement="right"></i>
+<i data-icon="skype" data-toggle="tooltip" title="skype" data-placement="right"></i>
+<i data-icon="skype-circled" data-toggle="tooltip" title="skype-circled" data-placement="right"></i>
+<i data-icon="renren" data-toggle="tooltip" title="renren" data-placement="right"></i>
+<i data-icon="sina-weibo" data-toggle="tooltip" title="sina-weibo" data-placement="right"></i>
+<i data-icon="paypal" data-toggle="tooltip" title="paypal" data-placement="right"></i>
+<i data-icon="picasa" data-toggle="tooltip" title="picasa" data-placement="right"></i>
+<i data-icon="soundcloud" data-toggle="tooltip" title="soundcloud" data-placement="right"></i>
+<i data-icon="mixi" data-toggle="tooltip" title="mixi" data-placement="right"></i>
+<i data-icon="behance" data-toggle="tooltip" title="behance" data-placement="right"></i>
+<i data-icon="google-circles" data-toggle="tooltip" title="google-circles" data-placement="right"></i>
+<i data-icon="vkontakte" data-toggle="tooltip" title="vkontakte" data-placement="right"></i>
+<i data-icon="smashing" data-toggle="tooltip" title="smashing" data-placement="right"></i>
+<i data-icon="sweden" data-toggle="tooltip" title="sweden" data-placement="right"></i>
+<i data-icon="db-shape" data-toggle="tooltip" title="db-shape" data-placement="right"></i>
+<i data-icon="bitbucket" data-toggle="tooltip" title="bitbucket" data-placement="right"></i>
+<i data-icon="sinter" data-toggle="tooltip" title="sinter" data-placement="right"></i>
+</div>

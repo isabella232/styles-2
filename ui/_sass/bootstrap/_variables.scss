@@ -1,4 +1,5 @@
 $white: white;
+$transparent: transparent;
 $dark: #333;
 $normal: #333;
 
@@ -18,7 +19,7 @@ $navy: #23404d;
 $blue: #40bdb7;
 $blue-darker: #328391;
 $blue-dark: mix($blue,$blue-darker);
-$blue-darkest: mix($blue-dark,$navy);
+$blue-darkest: mix($blue-darker,$navy);
 
 $green: #7fc05f;
 $green-darker: #3f9123;
@@ -36,6 +37,12 @@ $red: $orange;
 $red-darker: $orange-darker;
 $red-dark: $orange-dark;
 
+$blue-highlight: #def9fa;
+$green-highlight: #e7fcdc;
+$orange-highlight: #fff7d8;
+$yellow-highlight: #fff7d8;
+$red-highlight: #ffeeeb;
+
 $gray: #687587;
 
 $highlight: $silver;
@@ -47,7 +54,7 @@ $link: $blue;
 $offset: $green;
 
 $margin-small: 7.5vw;
-
+$stripe: 3px;
 
 // $bootstrap-sass-asset-helper: false !default;
 // //
@@ -70,7 +77,7 @@ $brand-primary:         $blue !default; // #337ab7
 $brand-success:         $green !default;
 $brand-info:            $blue !default;
 $brand-warning:         $orange !default;
-$brand-danger:          $red !default;
+$brand-danger:          $red-dark !default;
 
 
 // //== Scaffolding
@@ -78,7 +85,7 @@ $brand-danger:          $red !default;
 // //## Settings for some of the most global styles.
 
 // //** Background color for `<body>`.
-$body-bg:               $silver !default;
+$body-bg:               white !default;
 // //** Global text color on `<body>`.
 $text-color:            $dark !default;
 // //** Global textual link color.
@@ -579,20 +586,20 @@ $nav-pills-active-link-hover-color:         $component-active-color !default;
 // //
 // //## Define colors for form feedback states and, by default, alerts.
 
-$state-success-bg:               adjust-hue(lighten($brand-success,52%),-10%) !default;
-$state-success-text:             darken($brand-success,15%) !default;
+$state-success-bg:               $green-highlight !default;
+$state-success-text:             darken($green-dark,5%) !default;
 $state-success-border:           transparent !default;
 
-$state-info-bg:                  adjust-hue(lighten($brand-info,50%),5%) !default;
-$state-info-text:                darken($brand-info,15%) !default;
+$state-info-bg:                  $blue-highlight !default;
+$state-info-text:                darken($blue-dark,5%) !default;
 $state-info-border:              transparent !default;
 
-$state-warning-bg:               lighten($brand-warning,42%) !default;
-$state-warning-text:             saturate(adjust-hue(darken($brand-warning,10%),-10deg),50%) !default;
+$state-warning-bg:               $yellow-highlight !default;
+$state-warning-text:             darken($yellow-dark,5%) !default;
 $state-warning-border:           transparent !default;
 
-$state-danger-bg:                lighten($brand-danger,30%) !default;
-$state-danger-text:              desaturate(darken($brand-danger,15%),20%) !default;
+$state-danger-bg:                $red-highlight !default;
+$state-danger-text:              darken($red-dark,5%) !default;
 $state-danger-border:            transparent !default;
 
 
@@ -671,7 +678,7 @@ $label-link-hover-color:      $dark !default;
 // //##
 
 // //** Padding applied to the modal body
-$modal-inner-padding:         24px !default;
+$modal-inner-padding:         30px !default;
 
 // //** Padding applied to the modal title
 $modal-title-padding:         $modal-inner-padding !default;
@@ -688,15 +695,15 @@ $modal-content-fallback-border-color:          transparent !default;
 // //** Modal backdrop background color
 $modal-backdrop-bg:           #192c30 !default;
 // //** Modal backdrop opacity
-$modal-backdrop-opacity:      .07 !default;
+$modal-backdrop-opacity:      .5 !default;
 // //** Modal header border color
 $modal-header-border-color:   transparent !default;
 // //** Modal footer border color
 $modal-footer-border-color:   transparent !default;
 
-// $modal-lg:                    900px !default;
-// $modal-md:                    600px !default;
-// $modal-sm:                    300px !default;
+$modal-lg:                    calc(100vw - 210px) !default;
+$modal-md:                    640px !default;
+$modal-sm:                    400px !default;
 
 
 // //== Alerts
@@ -919,8 +926,8 @@ $breadcrumb-bg:                 transparent !default;
 // $kbd-color:                   #fff !default;
 // $kbd-bg:                      #333 !default;
 
-$pre-bg:                      transparent !default;
-$pre-color:                   $input-color-placeholder !default;
+$pre-bg:                      $blue-darkest !default;
+$pre-color:                   white !default;
 $pre-border-color:            transparent !default;
 // $pre-scrollable-max-height:   340px !default;
 

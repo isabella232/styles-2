@@ -11,5 +11,10 @@
 	&.label-danger { color: $red-dark; }
 	padding: 6px 0;
 	text-align: inherit;
+	+ .label {
+		&:not(.block) {
+			margin-left: 1.5em;
+		}
+	}
 }
 

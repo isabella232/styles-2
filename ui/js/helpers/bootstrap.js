@@ -18,6 +18,12 @@ $(document).on('click','[data-toggle="collapse"]',function(e) {
 	e.preventDefault();
 });
 
-$('[data-toggle=tooltip]').tooltip({container: 'body', html: true});
+$(document).tooltip({
+	selector: '[data-toggle="tooltip"]',
+	placement: function(tip,element){
+		return ( $(element).attr('data-placement') ) ? $(element).attr('data-placement') : 'right';
+	},
+	container: 'body'
+});
 
 $('[data-toggle=popover]').popover({container: 'body', html: true});

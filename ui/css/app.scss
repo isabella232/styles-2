@@ -5,10 +5,10 @@
 $hybrid: false;
 
 @charset "utf-8";
-@import "fonts";
 @import "bootstrap/variables";
 @import "functions/queries";
 @import "functions/mixins";
+@import "fonts";
 
 .sntr {
 	@import "bootstrap/bootstrap-sass/bootstrap";

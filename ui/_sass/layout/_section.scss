@@ -5,15 +5,43 @@ $section-padding-large: 30px;
 .section {
 	border-radius: $border-radius-base;
 	margin-bottom: 40px;
+	&.section-silver {
+		background: $silver;
+	}
 	&:not(.section-seamless) {
 		box-shadow: 0 0 0 1px $outline;
 		background: white;
 	}
+	&.section-silver { background: $silver; }
 	.section-empty { padding: $section-padding-large $section-padding-large; }
-	.section-header { padding: $section-padding-small $section-padding-large; }
-	.section-body { padding: $section-padding $section-padding-large;
+	.section-header {
+		padding: $section-padding-small $section-padding-large;
+		border-radius: $border-radius-base $border-radius-base 0 0;
+	}
+	.section-body {
+		padding: $section-padding $section-padding-large;
+		border-radius: 0 0 $border-radius-base $border-radius-base;
+		&.section-body-white {
+			background: white;
+		}
 		&.section-body-large, &.section-body-large-top { padding-top: $section-padding-large; }
 		&.section-body-large, &.section-body-large-bottom { padding-bottom: $section-padding-large; }
+		&.section-body-flush, &.section-body-flush-top { padding-top: 0; }
+		&.section-body-flush, &.section-body-flush-bottom { padding-bottom: 0; }
+		&.section-logs {
+			background: $pre-bg;
+			pre {
+				background: transparent;
+				padding: 0;
+				height: auto;
+				max-height: none;
+				resize: none;
+				margin: 0;
+			}
+		}
+		.table {
+			margin-bottom: 10px;
+		}
 	}
 
 	&.section-max-large { max-height: 60vh; }
@@ -29,16 +57,11 @@ $section-padding-large: 30px;
 }
 
 .section-table {
+	.table { margin: 0; }
 	td, th {
 		vertical-align: middle !important;
 		&:first-child { padding-left: $section-padding-large; }
 		&:last-child { padding-right: $section-padding-large; }
-	}
-	tbody {
-		td, th {
-			padding-top: 10px !important;
-			padding-bottom: 10px !important;
-		}
 	}
 }
 
@@ -49,7 +72,7 @@ $section-padding-large: 30px;
 	ul {
 		@include clean;
 		@include table(middle);
-
+		table-layout: fixed;
 		li {
 			a {
 				border-left: 1px solid transparent;
@@ -57,16 +80,28 @@ $section-padding-large: 30px;
 				display: block;
 				color: $light;
 				text-align: center;
-				padding: $section-padding $section-padding ($section-padding+2);
+				padding: ($section-padding - 1) $section-padding ($section-padding + 1);
 				&:hover {
 					color: $dark;
 				}
 				&.active {
 					color: $dark;
 					background: white;
-					border-color: $line;
+					border-color: $line !important;
+					&.has-logs {
+						background: $pre-bg;
+						color: white;
+						border-color: transparent !important;
+					}
 				}
 			}
+		}
+	}
+	&:not(.section-tabs-header) {
+		ul li a { border-top: 1px solid transparent; }
+	}
+	&.section-tabs-header {
+		ul li {
 			&:first-child a { border-top-left-radius: $border-radius-base; border-left-width: 0; }
 			&:last-child a { border-top-right-radius: $border-radius-base; border-right-width: 0; }
 		}
@@ -102,6 +137,6 @@ $section-padding-large: 30px;
 .section-header {
 	+ .section-filter {
 		padding-top: 0;
-		margin-top: -5px;
+		//margin-top: -5px;
 	}
 }

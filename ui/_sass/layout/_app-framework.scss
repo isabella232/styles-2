@@ -1,13 +1,13 @@
 $app-unit: 80px;
 $app-padding: 20px;
 $app-padding-large: 40px;
-$app-menu: 280px;
+$app-menu: 320px;
 $app-nav-bg: $navy;
 $app-menu-bg: $blue-dark;
-$app-menu-header-bg: $app-menu-bg;
 
 .app {
 	@include full;
+	background: $silver;
 	position: fixed;
 	overflow: hidden;
 	.app-nav {
@@ -108,13 +108,32 @@ $app-menu-header-bg: $app-menu-bg;
 .app-menu {
 	width: $app-menu;
 	background: $app-menu-bg;
+	.btn.btn-default {
+		@include button-variant(white,$blue-darker,transparent);
+	}
 	.app-menu-header {
 		height: $app-unit;
-		background: $app-menu-header-bg;
 		padding: $app-padding $app-padding-large;
 		color: white;
 	}
 	.app-menu-body {
+		@include scroll;
+		.app-menu-list {
+			padding-bottom: ($app-unit / 4);
+			&:not(:first-child) {
+				box-shadow: inset 0 1px 0 $outline;
+				padding-top: ($app-unit / 4);
+			}
+		}
+		h6 {
+			height: ( $app-unit / 2 );
+			line-height: ( $app-unit / 2 );
+			@include ellipsis;
+			color: $blue-darkest;
+			padding: 0 $app-padding-large;
+			margin: 0;
+
+		}
 		ul {
 			@include clean;
 			li {
@@ -123,9 +142,20 @@ $app-menu-header-bg: $app-menu-bg;
 					padding: 9px $app-padding-large 10px;
 					height: ( $app-unit / 2 );
 					color: white;
+					@include ellipsis;
 					@include transitions(.25s);
+					&.inactive {
+						color: $blue-darkest;
+					}
 					&:hover {
-						background: mix($blue-dark,$blue-darker);
+						background: $blue-darker;
+						opacity: 1;
+						color: white;
+					}
+					&.active {
+						&:before {
+							@include check;
+						}
 					}
 				}
 			}
@@ -149,7 +179,7 @@ $app-menu-header-bg: $app-menu-bg;
 		.app-setup-content {
 			padding-bottom: $app-padding-large;
 			.app-setup-body {
-				max-width: 1080px;
+				max-width: 960px;
 				margin: auto;
 			}
 		}

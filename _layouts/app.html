@@ -22,19 +22,21 @@
 					<a ng-click="showroute('dashboard')" class="app-nav-link app-nav-logo">
 						{% include svg/menu-logo.svg %}
 					</a>
-					<a ng-click="showroute('import')" class="app-nav-link app-nav-add" data-toggle="tooltip" data-placement="right" title="Import Project">
+					<!--
+					<a ng-click="showroute('import')" class="app-nav-link app-nav-add" data-toggle="tooltip" title="Import Project">
 						{% include svg/menu-add.svg %}
 					</a>
-					<a ng-class="{'app-nav-link':true,'active':(menu=='dashboard'),'current':(route=='dashboard')}" data-toggle="tooltip" data-placement="right" title="Dashboard" ng-click="showroute('dashboard')">
+					-->
+					<a ng-class="{'app-nav-link':true,'active':(menu=='dashboard'),'current':(route=='dashboard')}" data-toggle="tooltip" title="Dashboard" ng-click="showroute('dashboard')">
 						{% include svg/menu-dashboard.svg %}
 					</a>
-					<a ng-class="{'app-nav-link':true,'active':(menu=='projects'),'current':(route=='project')}" data-toggle="tooltip" data-placement="right" title="Projects" ng-click="showmenu('projects')">
+					<a ng-class="{'app-nav-link':true,'active':(menu=='projects'),'current':(route=='project')}" data-toggle="tooltip" title="Projects" ng-click="showmenu('projects')">
 						{% include svg/menu-project.svg %}
 					</a>
-					<a ng-class="{'app-nav-link':true,'active':(menu=='connections'),'current':(route=='connection')}" data-toggle="tooltip" data-placement="right" title="Connections" ng-click="showmenu('connections')">
+					<a ng-class="{'app-nav-link':true,'active':(menu=='connections'),'current':(route=='connection')}" data-toggle="tooltip" title="Connections" ng-click="showmenu('connections')">
 						{% include svg/menu-connection.svg %}
 					</a>
-					<a ng-class="{'app-nav-link app-nav-account':true,'active':(menu=='account')}" data-toggle="tooltip" data-placement="right" title="Account" ng-click="showmenu('account')">
+					<a ng-class="{'app-nav-link app-nav-account':true,'active':(menu=='account')}" data-toggle="tooltip" title="Settings / Account 1" ng-click="showmenu('account')">
 						<img src="{{site.baseurl}}/ui/img/avatars/avatar1.jpg" />
 					</a>
 				</div>
@@ -42,7 +44,22 @@
 					<div class="app-menu">
 						<div class="app-menu-section" ng-if="menu=='projects'">
 							<div class="app-menu-body">
-								<ul><li ng-repeat="x in projects"><a ng-click="showroute('project')">[[x]]</a></li></ul>
+								<div class="app-menu-list">
+									<h6>account_name</h6>
+									<ul>
+										<li><a ng-click="showroute('project')">analytics-suite</a></li>
+										<li><a ng-click="showroute('project')">website-tests</a></li>
+										<li><a ng-click="showroute('project')">crm-data</a></li>
+									</ul>
+								</div>
+								<div class="app-menu-list">
+									<h6>account_name</h6>
+									<ul>
+										<li><a ng-click="showroute('project')">analytics-suite</a></li>
+										<li><a ng-click="showroute('project')">website-tests</a></li>
+										<li><a ng-click="showroute('project')">crm-data</a></li>
+									</ul>
+								</div>
 							</div>
 							<div class="app-menu-header">
 								<div class="header">
@@ -50,14 +67,16 @@
 										<h2>Projects</h2>
 									</div>
 									<div class="header-actions">
-										<a ng-click="route='import';menu=false">add</a>
+										<a ng-click="showroute('import')" class="btn btn-default btn-icon" data-toggle="tooltip" title="Import New Project"><i data-icon="plus"></i></a>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="app-menu-section" ng-if="menu=='connections'">
 							<div class="app-menu-body">
-								<ul><li ng-repeat="x in connections"><a ng-click="showroute('connection')">[[x]]</a></li></ul>
+								<div class="app-menu-list">
+									<ul><li ng-repeat="x in connections"><a ng-click="showroute('connection')">[[x]]</a></li></ul>
+								</div>
 							</div>
 							<div class="app-menu-header">
 								<div class="header">
@@ -65,22 +84,40 @@
 										<h2>Connections</h2>
 									</div>
 									<div class="header-actions">
-										<a ng-click="route='import';menu=false">add</a>
+										<a ng-click="showroute('connection')" class="btn btn-default btn-icon" data-toggle="tooltip" title="Create New Connection"><i data-icon="plus"></i></a>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="app-menu-section" ng-if="menu=='account'">
 							<div class="app-menu-body">
-								<ul><li><a ng-click="showroute('account-profile')">Profile</a></li></ul>
-								<ul><li><a ng-click="showroute('account-notifications')">Notifications</a></li></ul>
-								<ul><li><a ng-click="showroute('account-team')">Team</a></li></ul>
-								<ul><li><a ng-click="showroute('login')">Sign out</a></li></ul>
+								<div class="app-menu-list">
+									<h6>Tristan Handy</h6>
+									<ul>
+										<li><a ng-click="showroute('account-profile')">Profile</a></li>
+										<li><a ng-click="showroute('login')">Sign out</a></li>
+									</ul>
+								</div>
+								<div class="app-menu-list">
+									<h6>Account 1</h6>
+									<ul>
+										<li><a ng-click="showroute('account-notifications')">Notifications</a></li>
+										<li><a ng-click="showroute('account-team')">Team</a></li>
+									</ul>
+								</div>
+								<div class="app-menu-list">
+									<h6>Switch Account</h6>
+									<ul>
+										<li><a class="active">Account 1</a></li>
+										<li><a class="inactive">Account 2</a></li>
+										<li><a class="inactive">Account 3</a></li>
+									</ul>
+								</div>
 							</div>
 							<div class="app-menu-header">
 								<div class="header">
 									<div class="header-title">
-										<h2>Account</h2>
+										<h2>Settings</h2>
 									</div>
 									
 								</div>
@@ -89,15 +126,32 @@
 					</div>
 					{% assign templates = (site.templates) %}
 					{% for template in templates %}
-						<div class="app-page" ng-if="route=='{{template.slug}}'">
-							{{ template.content }}
-							<div class="app-page-overlay" ng-click="hidemenu();"></div>
-						</div>
+						{% if template.type != 'modal' %}
+							<div class="app-page" ng-if="route=='{{template.slug}}'">
+								{{ template.content }}
+								<div class="app-page-overlay" ng-click="hidemenu();"></div>
+							</div>
+						{% endif %}
 					{% endfor %}
 				</div>
 			</div>
 		</div>
+		{% for template in templates %}
+			{% if template.type == 'modal' %}
+				<div class="modal fade" id="{{template.slug}}" tabindex="-1">
+					<div class="modal-dialog {% if template.size %}modal-{{ template.size }}{% endif %}" >
+						<div class="modal-dialog-content" >
+							<div class="modal-content">
+								{{ template.content }}
+							</div>
+						</div>
+					</div>
+				</div>
+			{% endif %}
+		{% endfor %}
 		<script>
+			$('.modal').on('click', function(e) { $('.modal').modal('hide'); }).on('click', '.modal-content', function(e) { e.stopPropagation(); });
+			$('.modal').on('shown', function() { $(".modal-dialog:visible").focus(); });
 			$(document).ready(function(){
 				var scope = angular.element($('body')[0]).scope();
 				scope.$apply(function() {
@@ -107,10 +161,13 @@
 					scope.import_account = false;
 					scope.github_accounts = ['companyname','quartzstudio','veritas','fishtown-analytics','kvasir','graduationavocet','unthinkingyard','vestfrog','snailcarlisle','twentytrap','alkaliremy','zaftigjune','selectorlardface','shopbowed','finaglestrangely','tastelesswaggler','boyoptimize','dreamergnashing','waylonclimb','itachernar','groveaccept','brewersandwich','cloisteredjoining','bytecodenuts','doofusuranium','carillonsafe','sporesmainstay','ovarybooes'];
 					scope.bitbucket_accounts = ['doofusuranium','carillonsafe','sporesmainstay','ovarybooes'];
-					scope.projects = ['Project 1','Project 2','Project 3','Project 4','Project 5','Project 6','Project 7'];
 					scope.connections = ['Connection 1','Connection 2','Connection 3'];
 					scope.github_repos = ['analytics','analytics-test','interfaces','website','data-mining','sporesmainstay','ovarybooes','zanyhorologium','tacoslethbridge','questmerchants','esraganbrackish','circleflamboyant','importburst','scalepoppysmic','charlestonvinney','dionardhospitable','patrickunripe','machrieumbrella','rawchickenhaffes','embedsandy','resonatescrag','sorbetfun','canoodleloser','playoffswee','trolleyathletics','redwillow','clearedenderman'];
 					scope.bitbucket_repos = ['zanyhorologium','tacoslethbridge','questmerchants','esraganbrackish','circleflamboyant','importburst','scalepoppysmic','charlestonvinney','dionardhospitable','patrickunripe','machrieumbrella','rawchickenhaffes','embedsandy','resonatescrag','sorbetfun','canoodleloser','playoffswee','trolleyathletics','redwillow','clearedenderman'];
+					scope.run_mode = 'logs';
+					scope.selectrepo = function(repo){
+						scope.import_repo = repo;
+					}
 					scope.showroute = function(area){
 						console.log('route:'+area);
 						scope.route = area;

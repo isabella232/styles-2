@@ -1,5 +1,5 @@
 .card {
-	.section { border-left: 3px solid $silver-dark; margin: 0; }
+	.section { border-left: $stripe solid $silver-dark; margin: 0; }
 	&.card-success .section { border-color: $green; }
 	&.card-danger .section { border-color: $red; }
 	&.card-warning .section { border-color: $yellow; }

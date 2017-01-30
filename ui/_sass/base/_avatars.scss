@@ -7,6 +7,8 @@
 	min-width: 20px;
 	display: inline-block;
 	vertical-align: middle;
+	background: $silver-dark;
+	@include circle;
 	&.avatar-medium {
 		@include font-size-larger;
 	}

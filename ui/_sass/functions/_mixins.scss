@@ -590,3 +590,16 @@ html .sntr, html.sntr body { @include font-size-base; }
     @return '.col-xs-#{$from}, .col-sm-#{$from}, .col-md-#{$from}, .col-lg-#{$from},' + column-range($from+1, $to);
   }
 }
+
+@mixin check(){
+  content: '';
+  display: inline-block;
+  border: 2px solid;
+  border-top-width: 0;
+  border-right-width: 0;
+  height: 6px;
+  width: 12px;
+  @include transform(rotate(-45deg));
+  margin: -6px .75em 0 0;
+  vertical-align: middle;
+}

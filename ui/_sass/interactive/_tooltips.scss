@@ -2,7 +2,7 @@
 	@include box-shadow($dropdown-shadow);
 	padding: 0 !important;
 	@include round;
-	margin: 0 !important;
+	//margin: 0 !important;
 	.tooltip-arrow { 
 		background: $tooltip-bg;
 		box-shadow: 0 0 0 1px rgba(0,0,0,.0875);

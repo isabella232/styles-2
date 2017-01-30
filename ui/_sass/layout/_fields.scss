@@ -1,0 +1,20 @@
+.fields {
+	margin: -10px -20px;
+	padding: 10px 0;
+	.field {
+		display: inline-block;
+		vertical-align: top;
+		margin: 8px 20px;
+		.field-key {
+			@include labels;
+			color: $light;
+		}
+		.field-value {
+
+		}
+	}
+}
+
+.well .fields {
+	padding: 2px 0;
+}

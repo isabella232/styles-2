@@ -7,7 +7,20 @@
 		padding-top: ($padding-base-vertical - 1);
 		height: $input-height-base;
 	}
+	&.btn-icon {
+		padding-left: ( $padding-base-vertical - 1 );
+		padding-right: ( $padding-base-vertical - 1 );
+		[data-icon]:before { margin-top: 0; }
+		&.btn-sm {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	&:not(.btn-icon) {
+		[data-icon] { margin-right: .25em; }
+	}
 	+ .btn { margin-left: .5em; }
+	&:not(.btn-link) { font-weight: bold; }
 	&:active,
 	&.active {
 		@include box-shadow(none);
@@ -27,6 +40,10 @@
 	background-repeat: repeat;
 	background-position: 50% -1px;
 	background-size: 105% 200%;
+	&.btn-github { @include button-variant(white,#3498DB,transparent); }
+	&.btn-bitbucket { @include button-variant(white,#205081,transparent); }
+	&.btn-email { @include button-variant($normal,$silver-dark,$outline); font-weight: normal; }
+	
 	&:hover, &:focus { background-position: 50% 95%; }
 	// &.btn-primary {
 	// 	background-color: $green;
@@ -48,13 +65,6 @@
 	&.btn-block {
 		padding-left: 10px;
 		padding-right: 10px;
-	}
-	&:not(.btn-link) {
-		font-weight: bold;
-		//@include standard-shadow(simple);
-		&:hover {
-			//@include standard-shadow-hover;
-		}
 	}
 	&.btn-default {
 		font-weight: normal;

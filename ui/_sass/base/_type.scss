@@ -51,7 +51,13 @@ a.inherit { color: inherit;
 		font-style: oblique;
 		letter-spacing: 0;
 		color: $light;
-		&:before { content: ' '; margin-left: .25em; }
+		margin-right: 1em;
+		&:before { content: ' '; margin-left: .5em; }
+		strong {
+			color: $dark;
+			font-style: normal;
+			font-weight: normal;
+		}
 	}
 	@include small(){ br { display: none; } }
 }
@@ -123,6 +129,10 @@ ul, ol { padding-left: 1.25em; }
 .text-danger { color: $brand-danger !important; }
 .text-warning { color: $brand-warning !important; }
 .text-info { color: $brand-info !important; }
+
+.compact {
+	@include compact;
+}
 
 .light,
 .text-light { 
@@ -213,6 +223,8 @@ a { cursor: pointer; }
 	font-style: oblique;
 	color: $light;
 }
+
+.light { color: $light; }
 
 .block {
 	display: block !important;

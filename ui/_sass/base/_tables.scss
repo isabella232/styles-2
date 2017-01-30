@@ -1,3 +1,17 @@
+@include table-row-variant('success', transparent);
+@include table-row-variant('info', transparent);
+@include table-row-variant('warning', transparent);
+@include table-row-variant('danger', transparent);
+
+@mixin table-row-status($class,$color) {
+  .table tr.#{$class} { box-shadow: inset $stripe 0 0 $color; }
+}
+
+@include table-row-status(success,$green);
+@include table-row-status(info,$blue);
+@include table-row-status(warning,$yellow);
+@include table-row-status(danger,$red);
+
 .table {
   margin-bottom: 40px;
   > thead > tr > th {
@@ -7,6 +21,12 @@
   }
   &.table-borderless {
     th, td { border: 0; }
+  }
+  &.table-flush {
+    td, th {
+      &:first-child { padding-left: 0; }
+      &:last-child { padding-right: 0; }
+    }
   }
   &.table-justified {
     th, td {
@@ -18,15 +38,20 @@
   > thead > tr,
   > tbody > tr,
   > tfoot > tr {
+    &.success {
+
+    }
     th, td {
       // padding-top: 10px;
       // padding-bottom: 10px;
       padding-left: $padding-base-horizontal; 
       padding-right: $padding-base-horizontal;
-      &all {
-        width: 1px;
-        white-space: nowrap;
-      }
+    }
+  }
+  &.table-large {
+    th, td {
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
     }
   }
   &.table-condensed {
@@ -76,6 +101,18 @@
   &.alternate {
     font-style: oblique;
   }
+}
+
+td, th {
+  &.sm {
+    width: 1px;
+    white-space: nowrap;
+  }
+  #{h(3)} { margin-top: -2px !important; }
+}
+
+.cell-right {
+  text-align: right;
 }
 
 .cell-protected {

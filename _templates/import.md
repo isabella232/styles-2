@@ -11,7 +11,7 @@ title: Import
 	</div>
 	<div class="flex app-flex">
 		<div class="section flex-item flex-1 section-max-large">
-			<div class="section-tabs">
+			<div class="section-tabs section-tabs-header">
 				<ul>
 					<li><a ng-class="{'active':(import_mode=='github')}" ng-click="import_mode='github'; import_account=false">Github</a></li>
 					<li><a ng-class="{'active':(import_mode=='bitbucket')}" ng-click="import_mode='bitbucket'; import_account=false">Bitbucket</a></li>

@@ -6,7 +6,7 @@ pre {
 	border-width: 0;
 	padding: $padding-base-vertical $padding-base-horizontal;
 	overflow: auto;
-	background: $silver;
+	//background: $silver;
 	resize: vertical;
 	border-radius: $border-radius-base;
 	&:not(.pre-large) {
