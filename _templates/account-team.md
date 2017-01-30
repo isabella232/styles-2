@@ -1,6 +1,5 @@
 ---
-title: Team Setup
-mode: minimal
+title: Team Settings
 ---
 
 <div class="app-body">
@@ -18,11 +17,8 @@ mode: minimal
 <div class="app-header">
 	<div class="header">
 		<div class="header-title">
-			<h2>Account Setup</h2>
-		</div>
-		<div class="header-actions">
-			<a class="btn btn-link meta" ng-click="showroute('setup')">Go Back</a>
-			<a ng-click="showroute('setup-connection')" class="btn btn-success">Continue <i data-icon="right-open-mini" class="icon-end"></i></a>
+			<h2>Team Settings</h2>
 		</div>
 	</div>
 </div>
+
