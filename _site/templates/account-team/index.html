@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" class="sntr">
+	<head>
+		
+		<meta charset="utf-8">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1.0, initial-scale=1.0, minimal-ui" />
+		<base href="/">
+
+				
+		
+		
+		
+		
+		
+		<title>Team Settings - Sinter</title>
+		<meta name="description" content="Visual Interface System for Sinter" />
+		<link rel="canonical" href="/templates/account-team/" />
+		
+		
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://localhost:4016" />
+		<meta property="og:site_name" content="Sinter" />
+		<meta property="og:title" content="Team Settings - Sinter" />
+		<meta property="og:description" content="Visual Interface System for Sinter" />
+		<meta property="og:image" content="/ui/img/graph/sinter-poster.jpg" />
+		
+		
+		<meta name="twitter:card" content="summary_large_image"/>
+		<meta name="twitter:title" content="Team Settings - Sinter"/>
+		<meta name="twitter:description" content="Visual Interface System for Sinter"/>
+		<meta name="twitter:image" content="/ui/img/graph/sinter-poster.jpg"/>
+		
+		
+		
+		<link rel="shortcut icon" href="/ui/img/graph/sinter-favicon.png" />
+		<link rel="apple-touch-icon" href="/ui/img/graph/sinter-avatar.png" />
+
+
+		<script>window.site={domain:''};</script>
+		<script src="/ui/jquery/jquery.1.9.1.min.js"></script>
+		<script src="/ui/js/sinter.js"></script>
+		
+		<script>WebFontConfig={google:{families:['Lato:400,400i,700,700i','Source Code Pro:400,700']}},function(){var a=document.createElement("script");a.src="//ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js",a.type="text/javascript",a.async="true";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}();</script>
+		<link rel="stylesheet" type="text/css" href="/ui/css/app.css" media="all" />
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+		<script>angular.module('SinterApp', []).config(function ($interpolateProvider) { $interpolateProvider.startSymbol('[[').endSymbol(']]'); });</script>
+	
+	</head>
+	<body data-ng-app="SinterApp">
+		<div class="page">
+			<div ng-class="{'app':true,'app-menu-visible':menu,'app-minimal':(mode=='minimal')}">
+				<div class="app-nav">
+					<a ng-click="showroute('dashboard')" class="app-nav-link app-nav-logo">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<path fill="#231F20" d="M12,10.25c-1.2426453,0-2.25-1.00737-2.25-2.25c0-1.2426453,1.0073547-2.25,2.25-2.25
+	c0.9664917,0,1.75-0.7835083,1.75-1.75c0-0.966507-0.7835083-1.75-1.75-1.75S10.25,3.033493,10.25,4
+	c0,1.24263-1.0073547,2.25-2.25,2.25C7.0335083,6.25,6.25,7.033493,6.25,8c0,0.9664917,0.7835083,1.75,1.75,1.75
+	c1.2426453,0,2.25,1.0073547,2.25,2.25c0,1.24263-1.0073547,2.25-2.25,2.25c-0.9664917,0-1.75,0.783493-1.75,1.75
+	c0,0.9664917,0.7835083,1.75,1.75,1.75S9.75,16.9664917,9.75,16c0-1.2426453,1.0073547-2.25,2.25-2.25
+	c0.9664917,0,1.75-0.7835083,1.75-1.75C13.75,11.033493,12.9664917,10.25,12,10.25z"/>
+</svg>
+
+					</a>
+					<!--
+					<a ng-click="showroute('import')" class="app-nav-link app-nav-add" data-toggle="tooltip" title="Import Project">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<polygon fill="#231F20" points="15,9.5 10.5,9.5 10.5,5 9.5,5 9.5,9.5 5,9.5 5,10.5 9.5,10.5 9.5,15 10.5,15 10.5,10.5 15,10.5 "/>
+</svg>
+
+					</a>
+					-->
+					<a ng-class="{'app-nav-link':true,'active':(menu=='dashboard'),'current':(route=='dashboard')}" data-toggle="tooltip" title="Dashboard" ng-click="showroute('dashboard')">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<path fill="#231F20" d="M2,8h7V3H2V8z M3,4h5v3H3V4z M2,17h7v-7H2V17z M3,11h5v5H3V11z M11,3v7h7V3H11z M17,9h-5V4h5V9z M11,17h7v-5
+	h-7V17z M12,13h5v3h-5V13z"/>
+</svg>
+
+					</a>
+					<a ng-class="{'app-nav-link':true,'active':(menu=='projects'),'current':(route=='project')}" data-toggle="tooltip" title="Projects" ng-click="showmenu('projects')">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<path fill="#231F20" d="M6,13v-1h1v1H6z M7,10H6v1h1V10z M7,8H6v1h1V8z M7,4H6v1h1V4z M7,6H6v1h1V6z M17,2v16h-7v2l-2-1l-2,1v-2H3V2
+	H17z M5,3v11h11V3H5z M16,15H4v2h2v-1h4v1h6V15z"/>
+</svg>
+
+					</a>
+					<a ng-class="{'app-nav-link':true,'active':(menu=='connections'),'current':(route=='connection')}" data-toggle="tooltip" title="Connections" ng-click="showmenu('connections')">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<path fill="#231F20" d="M17.3535156,3.3535156l-0.7070312-0.7070312l-2.4228516,2.4228516
+	C13.0863647,4.0936279,11.6123657,3.5,10,3.5c-3.5839844,0-6.5,2.9160156-6.5,6.5
+	c0,1.6123657,0.5936279,3.0863647,1.5693359,4.2236328l-2.4228516,2.4228516l0.7070312,0.7070312l2.4228516-2.4228516
+	C6.9136353,15.9063721,8.3876343,16.5,10,16.5c3.5839844,0,6.5-2.9160156,6.5-6.5
+	c0-1.6123657-0.5936279-3.0863647-1.5693359-4.2236328L17.3535156,3.3535156z M15.5,10c0,3.0322266-2.4677734,5.5-5.5,5.5
+	c-1.3366699,0-2.5626831-0.4802856-3.5168457-1.276123l3.2730713-3.2730713C9.8362427,10.9714355,9.9135742,11,10,11
+	c0.5523071,0,1-0.4477539,1-1c0-0.5523071-0.4476929-1-1-1s-1,0.4476929-1,1c0,0.0864868,0.0285645,0.1637573,0.0491943,0.2437744
+	l-3.2730103,3.2730103C4.9803467,12.562561,4.5,11.3365479,4.5,10c0-3.0327148,2.4672852-5.5,5.5-5.5
+	c1.3365479,0,2.562561,0.4803467,3.5167847,1.2761841l-1.430481,1.430481C11.5019531,6.7689209,10.7845459,6.5,10,6.5
+	c-1.9296875,0-3.5,1.5703125-3.5,3.5h1c0-1.378418,1.121582-2.5,2.5-2.5c1.3789062,0,2.5,1.121582,2.5,2.5
+	c0,1.3789062-1.1210938,2.5-2.5,2.5v1c1.9296875,0,3.5-1.5703125,3.5-3.5c0-0.7845459-0.2689209-1.5019531-0.706665-2.0863037
+	l1.430542-1.430542C15.0197144,7.4373169,15.5,8.6633301,15.5,10z"/>
+</svg>
+
+					</a>
+					<a ng-class="{'app-nav-link app-nav-account':true,'active':(menu=='account')}" data-toggle="tooltip" title="Settings / Account 1" ng-click="showmenu('account')">
+						<img src="/ui/img/avatars/avatar1.jpg" />
+					</a>
+				</div>
+				<div class="app-content">
+					<div class="app-menu">
+						<div class="app-menu-section" ng-if="menu=='projects'">
+							<div class="app-menu-body">
+								<div class="app-menu-list">
+									<h6>account_name</h6>
+									<ul>
+										<li><a ng-click="showroute('project')">analytics-suite</a></li>
+										<li><a ng-click="showroute('project')">website-tests</a></li>
+										<li><a ng-click="showroute('project')">crm-data</a></li>
+									</ul>
+								</div>
+								<div class="app-menu-list">
+									<h6>account_name</h6>
+									<ul>
+										<li><a ng-click="showroute('project')">analytics-suite</a></li>
+										<li><a ng-click="showroute('project')">website-tests</a></li>
+										<li><a ng-click="showroute('project')">crm-data</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="app-menu-header">
+								<div class="header">
+									<div class="header-title">
+										<h2>Projects</h2>
+									</div>
+									<div class="header-actions">
+										<a ng-click="showroute('import')" class="btn btn-default btn-icon" data-toggle="tooltip" title="Import New Project"><i data-icon="plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="app-menu-section" ng-if="menu=='connections'">
+							<div class="app-menu-body">
+								<div class="app-menu-list">
+									<ul><li ng-repeat="x in connections"><a ng-click="showroute('connection')">[[x]]</a></li></ul>
+								</div>
+							</div>
+							<div class="app-menu-header">
+								<div class="header">
+									<div class="header-title">
+										<h2>Connections</h2>
+									</div>
+									<div class="header-actions">
+										<a ng-click="showroute('connection')" class="btn btn-default btn-icon" data-toggle="tooltip" title="Create New Connection"><i data-icon="plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="app-menu-section" ng-if="menu=='account'">
+							<div class="app-menu-body">
+								<div class="app-menu-list">
+									<h6>Tristan Handy</h6>
+									<ul>
+										<li><a ng-click="showroute('account-profile')">Profile</a></li>
+										<li><a ng-click="showroute('login')">Sign out</a></li>
+									</ul>
+								</div>
+								<div class="app-menu-list">
+									<h6>Account 1</h6>
+									<ul>
+										<li><a ng-click="showroute('account-notifications')">Notifications</a></li>
+										<li><a ng-click="showroute('account-team')">Team</a></li>
+									</ul>
+								</div>
+								<div class="app-menu-list">
+									<h6>Switch Account</h6>
+									<ul>
+										<li><a class="active">Account 1</a></li>
+										<li><a class="inactive">Account 2</a></li>
+										<li><a class="inactive">Account 3</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="app-menu-header">
+								<div class="header">
+									<div class="header-title">
+										<h2>Settings</h2>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+						
+							<div class="app-page" ng-if="route=='account-team'">
+								<div class="app-body">
+	<div class="app-setup app-setup-top">
+		<div class="app-setup-content">
+			<div class="app-setup-body">
+				
+				<div class="section-label">
+	<h1>
+		Invite your Team
+		<small>Enter email addresses to invite teammates to your Sinter Project.</small>
+	</h1>
+</div>
+<div class="section">
+	<div class="section-table">
+		<table class="table table-justified table-large">
+			<tbody>
+				<tr>
+					<td class="sm"><div class="avatar avatar-large"><img src="/ui/img/avatars/avatar1.jpg" /></div></td>
+					<td class="sm"><h3>Tristan Handy</h3></td>
+					<td><div class="meta">tristan@sinterdata.com</div></td>
+					<td>
+						<div class="dropdown">
+							<div class="light" data-toggle="dropdown"><span class="caret"></span></div>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a href="#">Action 1</a></li>
+								<li><a href="#">Action 2</a></li>
+								<li><a href="#">Action 3</a></li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="sm"><div class="avatar avatar-large"></div></td>
+					<td class="sm"><h3>Justin Example</h3></td>
+					<td><div class="meta">this-wont-be-here-on-setup-just-demo@sinterdata.com</div></td>
+					<td>
+						<div class="dropdown">
+							<div class="light" data-toggle="dropdown"><span class="caret"></span></div>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a href="#">Action 1</a></li>
+								<li><a href="#">Action 2</a></li>
+								<li><a href="#">Action 3</a></li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<form>
+	<textarea ng-model="invites" class="form-control input-lg focus input-dark" placeholder="Invite additional team members by entering email addresses, separated with commas or new lines..."></textarea>
+	<div class="form-footer" ng-if="invites">
+		<input type="submit" class="btn btn-info" value="Invite" />
+	</div>
+</form>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="app-header">
+	<div class="header">
+		<div class="header-title">
+			<h2>Team Settings</h2>
+		</div>
+	</div>
+</div>
+
+
+								<div class="app-page-overlay" ng-click="hidemenu();"></div>
+							</div>
+						
+					
+						
+							<div class="app-page" ng-if="route=='connection'">
+								<div class="app-body">
+	
+	{% include content/include-connection.html %}
+	
+</div>
+
+<div class="app-header">
+	<div class="header">
+		<div class="header-title">
+			<h2>Edit Connection</h2>
+		</div>
+		<div class="header-actions">
+			<a href="#" class="btn btn-default">Remove</a>
+			<a href="#" class="btn btn-success">Save Connection</a>
+		</div>
+	</div>
+</div>
+
+								<div class="app-page-overlay" ng-click="hidemenu();"></div>
+							</div>
+						
+					
+						
+							<div class="app-page" ng-if="route=='dashboard'">
+								<div class="app-body">
+	<div class="cards">
+		<div class="card card-success">
+			<div class="section section-launch" ng-click="showroute('project')">
+				<div class="section-header">
+					<div class="header">
+						<div class="header-title"><h3>account_name / analytics-suite</h3></div>
+						<div class="header-labels"><span class="badge badge-success">Connection OK</span></div>
+					</div>
+				</div>
+				<div class="section-table">
+					<table class="table table-justified table-condensed">
+						<thead>
+							<tr>
+								<th>Passing</th>
+								<th>Failing</th>
+								<th>Last Run</th>
+								<th>Next Run</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="label label-success">3 Jobs</span></td>
+								<td><span class="label label-danger"></span></td>
+								<td><span class="label label-default">40 min</span></td>
+								<td><span class="label">20 min</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="card card-danger">
+			<div class="section section-launch" ng-click="showroute('project')">
+				<div class="section-header">
+					<div class="header">
+						<div class="header-title"><h3>account_name / analytics-suite</h3></div>
+						<div class="header-labels"><span class="badge badge-danger">Connection Failed</span></div>
+					</div>
+				</div>
+				<div class="section-table">
+					<table class="table table-justified table-condensed">
+						<thead>
+							<tr>
+								<th>Passing</th>
+								<th>Failing</th>
+								<th>Last Run</th>
+								<th>Next Run</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="label label-success">2 Jobs</span></td>
+								<td><span class="label label-danger">1 job</span></td>
+								<td><span class="label label-default">40 min</span></td>
+								<td><span class="label">20 min</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		{% for i in (1..5) %}
+			<div class="card card-success">
+				<div class="section section-launch" ng-click="showroute('project')">
+					<div class="section-header">
+						<div class="header">
+							<div class="header-title"><h3>account_name / analytics-suite</h3></div>
+							<div class="header-labels"><span class="badge badge-success">Connection OK</span></div>
+						</div>
+					</div>
+					<div class="section-table">
+						<table class="table table-justified table-condensed">
+							<thead>
+								<tr>
+									<th>Passing</th>
+									<th>Failing</th>
+									<th>Last Run</th>
+									<th>Next Run</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><span class="label label-success">3 Jobs</span></td>
+									<td><span class="label label-danger"></span></td>
+									<td><span class="label label-default">40 min</span></td>
+									<td><span class="label">20 min</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+		<div class="card">
+			<div class="section section-launch" ng-click="showroute('project')">
+				<div class="section-header">
+					<div class="header">
+						<div class="header-title"><h3>account_name / analytics-suite</h3></div>
+						<div class="header-actions">
+							<span class="btn btn-sm btn-default meta">configure...</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="app-header">
+	<div class="header">
+		<div class="header-title">
+			<h2>Sinter Dashboard</h2>
+		</div>
+	</div>
+</div>
+
+								<div class="app-page-overlay" ng-click="hidemenu();"></div>
+							</div>
+						
+					
+						
+							<div class="app-page" ng-if="route=='import'">
+								<div class="app-body">
+
+	{% include content/include-import.html %}
+
+</div>
+
+<div class="app-header">
+	<div class="header">
+		<div class="header-title">
+			<h2>Import Project</h2>
+		</div>
+		<div class="header-actions">
+			<a ng-click="showroute('project-edit')" class="btn btn-success">Import Project</a>
+		</div>
+	</div>
+</div>
+
+								<div class="app-page-overlay" ng-click="hidemenu();"></div>
+							</div>
+						
+					
+						
+							<div class="app-page" ng-if="route=='project'">
+								<div class="app-body">
+	
+	<div class="section">
+		<div class="section-body">
+			<div class="header">
+				<div class="header-title">
+					<h1>account_name / analytics-suite</h1>
+				</div>
+				<div class="header-labels">
+					<span class="badge badge-success">Connection OK</span>
+				</div>
+			</div>
+			<div class="fields">
+				<div class="field">
+					<div class="field-key">Next Run</div>
+					<div class="field-value">20 min</div>
+				</div>
+				<div class="field">
+					<div class="field-key">Last Run</div>
+					<div class="field-value">40 min</div>
+				</div>
+				<div class="field">
+					<div class="field-key">Test Status</div>
+					<div class="field-value"><span class="label label-success">Passing</span></div>
+				</div>
+				<div class="field">
+					<div class="field-key">Connection</div>
+					<div class="field-value"><a ng-click="showroute('connection')">Sample Connection</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section">
+		<div class="section-header">
+			<div class="header">
+				<div class="header-title">
+					<h4>Jobs <small>(Scheduled tasks that run this project at regular intervals)</small></h4>
+				</div>
+				<div class="header-actions">
+					<a class="btn btn-default btn-sm meta">add job</a>
+				</div>
+			</div>
+		</div>
+		<div class="section-table">
+			<table class="table table-justified table-hover table-condensed">
+				<thead>
+					<tr>
+						<th>Job</th>
+						<th>Schedule</th>
+						<th>Next Run</th>
+						<th>Last Run</th>
+						<th class="text-right">Status</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="success">
+						<td>Job Name 1</td>
+						<td><div class="label label-default">Hourly</div></td>
+						<td>20 min</td>
+						<td>40 min</td>
+						<td class="text-right"><div class="label label-success">Success</div></td>
+						<td>
+							<div class="dropdown">
+								<div class="light" data-toggle="dropdown"><span class="caret"></span></div>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li><a href="#">Run Job</a></li>
+									<li><a href="#" data-toggle="modal" data-target="#run-edit">Edit</a></li>
+									<li class="divider"></li>
+									<li><a href="#" data-toggle="modal" data-target="#run-remove" class="text-danger">Remove</a></li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+					<tr class="danger">
+						<td>Job Name 2</td>
+						<td><div class="label label-default">Daily 12am</div></td>
+						<td>20 min</td>
+						<td>40 min</td>
+						<td class="text-right"><div class="label label-danger">Fail</div></td>
+						<td>
+							<div class="dropdown">
+								<div class="light" data-toggle="dropdown"><span class="caret"></span></div>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li><a href="#">Run Job</a></li>
+									<li><a href="#" data-toggle="modal" data-target="#run-edit">Edit</a></li>
+									<li class="divider"></li>
+									<li><a href="#" data-toggle="modal" data-target="#run-remove" class="text-danger">Remove</a></li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+					<tr class="success">
+						<td>Job Name 3</td>
+						<td><div class="label label-default">Weekdays 8am, 5pm</div></td>
+						<td>20 min</td>
+						<td>40 min</td>
+						<td class="text-right"><div class="label label-success">Success</div></td>
+						<td>
+							<div class="dropdown">
+								<div class="light" data-toggle="dropdown"><span class="caret"></span></div>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li><a href="#">Run Job</a></li>
+									<li><a href="#" data-toggle="modal" data-target="#run-edit">Edit</a></li>
+									<li class="divider"></li>
+									<li><a href="#" data-toggle="modal" data-target="#run-remove" class="text-danger">Remove</a></li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+					<tr class="success">
+						<td>Job Name 4</td>
+						<td><div class="label label-default">Hourly</div></td>
+						<td>20 min</td>
+						<td>40 min</td>
+						<td class="text-right"><div class="label label-success">Success</div></td>
+						<td>
+							<div class="dropdown">
+								<div class="light" data-toggle="dropdown"><span class="caret"></span></div>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li><a href="#">Run Job</a></li>
+									<li><a href="#" data-toggle="modal" data-target="#run-edit">Edit</a></li>
+									<li class="divider"></li>
+									<li><a href="#" data-toggle="modal" data-target="#run-remove" class="text-danger">Remove</a></li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="section">
+		<div class="section-header">
+			<div class="header">
+				<div class="header-title">
+					<h4>Runs <small>(Chronological list of jobs that have run)</small></h4>
+				</div>
+				<div class="header-filters">
+					
+				</div>
+			</div>
+		</div>
+		<div class="section-table">
+			<table class="table table-justified table-hover table-large">
+				<thead>
+					<tr>
+						<th class="sm">Status</th>
+						<th>Job / Cause</th>
+						<th>Notes</th>
+						<th class="sm">Time / Duration</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for i in (1..5) %}
+						<tr>
+							<td class="sm"><span class="badge badge-success">Success</span></td>
+							<td>
+								<div>Job Name 1</div>
+								<div class="label block label-warning">force run</div>
+							</td>
+							<td>
+								<div>Merge pull request #323 from CasperSleep/jenny</div>
+								<div class="meta">alinqianyun51 committed on GitHub 1 day ago <a href="#" class="code">#726341a</a></div>
+							</td>
+							<td class="sm cell-right">
+								<div class="label block">01/20/2017 12:11am</div>
+								<div class="label label-default block">20 min</div>
+							</td>
+							<td data-toggle="tooltip" title="Logs &amp; Notifications" data-placement="top">
+								<a href="#" class="btn btn-default btn-sm meta" data-toggle="modal" data-target="#run">details...</a>
+							</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</div>
+
+<div class="app-header">
+	<div class="header">
+		<div class="header-title">
+			<h2>Project Overview</h2>
+		</div>
+		<div class="header-actions">
+			<div class="dropdown">
+				<button class="btn btn-primary" data-toggle="dropdown">Run Job <span class="caret"></span></button>
+				<ul class="dropdown-menu dropdown-menu-right">
+					<li><a href="#">Job 1</a></li>
+					<li><a href="#">Job 2</a></li>
+					<li><a href="#">Job 3</a></li>
+					<li><a href="#">Job 4</a></li>
+					<li><a href="#">Job 5</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+								<div class="app-page-overlay" ng-click="hidemenu();"></div>
+							</div>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<div class="app-page" ng-if="route=='setup-connection'">
+								<div class="app-body">
+	<div class="app-setup app-setup-top">
+		<div class="app-setup-content">
+			<div class="app-setup-body">
+
+				{% include content/include-connection.html %}
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="app-header">
+	<div class="header">
+		<div class="header-title">
+			<h2>Account Setup</h2>
+		</div>
+		<div class="header-actions">
+			<a class="btn btn-link meta" ng-click="showroute('setup-team')">Go Back</a>
+			<a ng-click="showroute('project')" class="btn btn-success">Finish <i data-icon="right-open-mini" class="icon-end"></i></a>
+		</div>
+	</div>
+</div>
+
+								<div class="app-page-overlay" ng-click="hidemenu();"></div>
+							</div>
+						
+					
+						
+							<div class="app-page" ng-if="route=='setup-team'">
+								<div class="app-body">
+	<div class="app-setup app-setup-top">
+		<div class="app-setup-content">
+			<div class="app-setup-body">
+				
+				{% include content/include-team.html %}
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="app-header">
+	<div class="header">
+		<div class="header-title">
+			<h2>Account Setup</h2>
+		</div>
+		<div class="header-actions">
+			<a class="btn btn-link meta" ng-click="showroute('setup')">Go Back</a>
+			<a ng-click="showroute('setup-connection')" class="btn btn-success">Continue <i data-icon="right-open-mini" class="icon-end"></i></a>
+		</div>
+	</div>
+</div>
+
+								<div class="app-page-overlay" ng-click="hidemenu();"></div>
+							</div>
+						
+					
+						
+							<div class="app-page" ng-if="route=='setup'">
+								<div class="app-body">
+	<div class="app-setup app-setup-top">
+		<div class="app-setup-content">
+			<div class="app-setup-body">
+				<div ng-hide="(has_github || has_bitbucket)">
+					<div class="text-center">
+						<h1 class="h0">Start Your Sinter Account</h1>
+						<p class="text-large meta">Sinter is a hosted ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Get started by connecting your Github or Bitbucket account.</p>
+						<a ng-click="has_github=true;" class="btn btn-github btn-lg"><i data-icon="github"></i> Github Sign In</a>
+						<a ng-click="has_github=true;" class="btn btn-bitbucket btn-lg"><i data-icon="bitbucket"></i> Bitbucket Sign In</a>
+						<a ng-click="has_github=true;" class="btn btn-email btn-lg"><i data-icon="mail"></i> Email Sign Up</a>
+					</div>
+				</div>
+				<div ng-show="(has_github || has_bitbucket)">
+
+					{% include content/include-import.html %}
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="app-header">
+	<div class="header">
+		<div class="header-title">
+			<h2>Account Setup</h2>
+		</div>
+		<div class="header-actions">
+			<a class="btn btn-link meta">Go Back</a>
+			<a ng-if="(import_repo)" ng-click="showroute('setup-team')" class="btn btn-success">Continue <i data-icon="right-open-mini" class="icon-end"></i></a>
+		</div>
+	</div>
+</div>
+
+								<div class="app-page-overlay" ng-click="hidemenu();"></div>
+							</div>
+						
+					
+				</div>
+			</div>
+		</div>
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+				<div class="modal fade" id="run-edit" tabindex="-1">
+					<div class="modal-dialog " >
+						<div class="modal-dialog-content" >
+							<div class="modal-content">
+								<div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal" ><i data-icon="close" class="md"></i></button>
+	<h4 class="modal-title">New Job</h4>
+</div>
+<div class="modal-body">
+	form goes here...
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	<button type="button" class="btn btn-success">Save Job</button>
+</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+		
+			
+				<div class="modal fade" id="run-remove" tabindex="-1">
+					<div class="modal-dialog modal-sm" >
+						<div class="modal-dialog-content" >
+							<div class="modal-content">
+								<div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal" ><i data-icon="close" class="md"></i></button>
+	<h4 class="modal-title">Remove Job</h4>
+</div>
+<div class="modal-body">
+	<div class="compact">
+		<p class="text-large">Are you sure you want to remove <i>Job Name 1</i>?</p>
+		<p class="meta">Results of all previous runs will continue to remain available, and all scheduled runs will cease.</p>
+	</div>
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+	<button type="button" class="btn btn-danger">Remove</button>
+</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+		
+			
+				<div class="modal fade" id="run" tabindex="-1">
+					<div class="modal-dialog modal-lg" >
+						<div class="modal-dialog-content" >
+							<div class="modal-content">
+								<div class="section section-seamless section-silver">
+	<div class="section-header">
+		<div class="header ">
+			<div class="header-title">
+				<h4>Run Details</h4>
+			</div>
+			<div class="header-actions">
+				<a href="#" class="close" data-dismiss="modal" ><i data-icon="close" class="md"></i></a>
+			</div>
+		</div>
+	</div>
+	<div class="section-body section-body-large-bottom section-body-flush-top">
+		<div class="card card-success">
+			<div class="section">
+				<div class="section-body">
+					<div class="fields">
+						<div class="field">
+							<div class="field-key">Result</div>
+							<div class="field-value"><div class="label label-success">Success</div></div>
+						</div>
+						<div class="field">
+							<div class="field-key">Job</div>
+							<div class="field-value"><a href="#">Job Name 1</a></div>
+						</div>
+						<div class="field">
+							<div class="field-key">Cause</div>
+							<div class="field-value"><div class="label label-warning">Force Run</div></div>
+						</div>
+						<div class="field">
+							<div class="field-key">Time</div>
+							<div class="field-value"><div class="label">01/20/2017 12:11am</div></div>
+						</div>
+						<div class="field">
+							<div class="field-key">Duration</div>
+							<div class="field-value"><div class="label label-default">11 min</div></div>
+						</div>
+						<div class="field">
+							<div class="field-key">Response</div>
+							<div class="field-value">
+								<span>Merge pull request #323 from CasperSleep/jenny</span>
+								<span class="meta">alinqianyun51 committed on GitHub 1 day ago <a href="#" class="code">#726341a</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section-tabs">
+		<ul>
+			<li><a ng-class="{'has-logs':true,'active':(run_mode=='logs')}" ng-click="run_mode='logs';">Logs</a></li>
+			<li><a ng-class="{'active':(run_mode=='notifications')}" ng-click="run_mode='notifications';">Notifications</a></li>
+		</ul>
+	</div>
+	<div class="section-body section-body-large section-logs" ng-if="(run_mode=='logs')">
+		<pre>pulled new dependency quickbooks
+Compiled 87 models, 0 data tests, 0 schema tests, 0 archives, 0 analyses
+Loading dependency graph file
+Connecting to redshift
+Concurrency: 1 threads (target='default')
+Running!
+
+18:17:08 | Running 87 models
+18:17:08 | 1 of 87 START view model analytics.quickbooks_invoices .............. [RUN]
+18:17:09 | 1 of 87 OK created view model analytics.quickbooks_invoices ......... [CREATE VIEW in 0.65s]
+18:17:09 | 2 of 87 START view model analytics.quickbooks_payments .............. [RUN]
+18:17:10 | 2 of 87 OK created view model analytics.quickbooks_payments ......... [CREATE VIEW in 0.73s]
+18:17:10 | 3 of 87 START view model analytics.quickbooks_bill_payments ......... [RUN]
+18:17:11 | 3 of 87 OK created view model analytics.quickbooks_bill_payments .... [CREATE VIEW in 1.47s]
+18:17:11 | 4 of 87 START view model analytics.sf_opportunities ................. [RUN]
+18:17:12 | 4 of 87 OK created view model analytics.sf_opportunities ............ [INSERT 0 1 in 0.95s]
+18:17:12 | 5 of 87 START view model analytics.account_exclusions ............... [RUN]
+18:17:14 | 5 of 87 OK created view model analytics.account_exclusions .......... [INSERT 0 1 in 1.32s]
+18:17:14 | 6 of 87 START view model analytics.aux_account_employees ............ [RUN]
+18:17:14 | 6 of 87 OK created view model analytics.aux_account_employees ....... [INSERT 0 1 in 0.69s]
+18:17:14 | 7 of 87 START view model analytics.quickbooks_bills ................. [RUN]
+18:17:16 | 7 of 87 OK created view model analytics.quickbooks_bills ............ [CREATE VIEW in 1.18s]
+18:17:16 | 8 of 87 START view model analytics.quickbooks_billpayment_lines ..... [RUN]
+18:17:17 | 8 of 87 OK created view model analytics.quickbooks_billpayment_lines  [CREATE VIEW in 0.80s]
+18:17:17 | 9 of 87 START view model analytics.quickbooks_vendors ............... [RUN]
+18:17:18 | 9 of 87 OK created view model analytics.quickbooks_vendors .......... [CREATE VIEW in 1.18s]
+18:17:18 | 10 of 87 START view model analytics.quickbooks_classifications ...... [RUN]
+18:17:18 | 10 of 87 OK created view model analytics.quickbooks_classifications . [CREATE VIEW in 0.70s]
+18:17:18 | 11 of 87 START view model analytics.sf_accounts ..................... [RUN]
+18:17:19 | 11 of 87 OK created view model analytics.sf_accounts ................ [INSERT 0 1 in 0.88s]
+18:17:19 | 12 of 87 START view model analytics.uv_subscription_plans ........... [RUN]
+18:17:21 | 12 of 87 OK created view model analytics.uv_subscription_plans ...... [INSERT 0 1 in 1.13s]
+18:17:21 | 13 of 87 START view model analytics.cb_domain_aliases ............... [RUN]
+18:17:21 | 13 of 87 OK created view model analytics.cb_domain_aliases .......... [INSERT 0 1 in 0.63s]
+18:17:21 | 14 of 87 START view model analytics.quickbooks_missing_account_classifications  [RUN]
+18:17:22 | 14 of 87 OK created view model analytics.quickbooks_missing_account_classifications  [CREATE VIEW in 1.05s]
+18:17:22 | 15 of 87 START view model analytics.quickbooks_statement_order ...... [RUN]
+18:17:23 | 15 of 87 OK created view model analytics.quickbooks_statement_order . [CREATE VIEW in 0.89s]
+18:17:23 | 16 of 87 START view model analytics.quickbooks_purchases ............ [RUN]
+18:17:24 | 16 of 87 OK created view model analytics.quickbooks_purchases ....... [CREATE VIEW in 0.89s]
+18:17:24 | 17 of 87 START view model analytics.uv_subdomains ................... [RUN]
+18:17:25 | 17 of 87 OK created view model analytics.uv_subdomains .............. [INSERT 0 1 in 1.20s]
+18:17:25 | 18 of 87 START view model analytics.uv_products ..................... [RUN]
+18:17:26 | 18 of 87 OK created view model analytics.uv_products ................ [INSERT 0 1 in 0.80s]
+18:17:26 | 19 of 87 START view model analytics.quickbooks_accounts ............. [RUN]
+18:17:27 | 19 of 87 OK created view model analytics.quickbooks_accounts ........ [CREATE VIEW in 0.66s]
+18:17:27 | 20 of 87 START view model analytics.uv_users ........................ [RUN]
+18:17:28 | 20 of 87 OK created view model analytics.uv_users ................... [INSERT 0 1 in 1.46s]
+18:17:28 | 21 of 87 START view model analytics.quickbooks_deposits ............. [RUN]
+18:17:29 | 21 of 87 OK created view model analytics.quickbooks_deposits ........ [CREATE VIEW in 0.57s]
+18:17:29 | 22 of 87 START view model analytics.uv_watches ...................... [RUN]
+18:17:30 | 22 of 87 OK created view model analytics.uv_watches ................. [INSERT 0 1 in 0.93s]
+18:17:30 | 23 of 87 START view model analytics.sf_opportunity_medium_classifications  [RUN]
+18:17:31 | 23 of 87 OK created view model analytics.sf_opportunity_medium_classifications  [INSERT 0 1 in 0.91s]
+18:17:31 | 24 of 87 START view model analytics.uv_tickets ...................... [RUN]
+18:17:32 | 24 of 87 OK created view model analytics.uv_tickets ................. [INSERT 0 1 in 1.18s]
+18:17:32 | 25 of 87 START view model analytics.quickbooks_journal_entries ...... [RUN]
+18:17:33 | 25 of 87 OK created view model analytics.quickbooks_journal_entries . [CREATE VIEW in 0.90s]
+18:17:33 | 26 of 87 START view model analytics.cb_companies .................... [RUN]
+18:17:35 | 26 of 87 OK created view model analytics.cb_companies ............... [INSERT 0 1 in 1.64s]
+18:17:35 | 27 of 87 START view model analytics.quickbooks_items ................ [RUN]
+18:17:36 | 27 of 87 OK created view model analytics.quickbooks_items ........... [CREATE VIEW in 1.23s]
+18:17:36 | 28 of 87 START view model analytics.cb_null_responses ............... [RUN]
+18:17:37 | 28 of 87 OK created view model analytics.cb_null_responses .......... [INSERT 0 1 in 1.32s]
+18:17:37 | 29 of 87 START view model analytics.quickbooks_customers ............ [RUN]
+18:17:41 | 29 of 87 OK created view model analytics.quickbooks_customers ....... [CREATE VIEW in 3.72s]
+18:17:41 | 30 of 87 START view model analytics.uv_nps_ratings .................. [RUN]
+18:17:43 | 30 of 87 OK created view model analytics.uv_nps_ratings ............. [INSERT 0 1 in 2.19s]
+18:17:43 | 31 of 87 START view model analytics.uv_subscriptions ................ [RUN]
+18:17:45 | 31 of 87 OK created view model analytics.uv_subscriptions ........... [INSERT 0 1 in 1.18s]
+18:17:45 | 32 of 87 START view model analytics.quickbooks_invoice_lines ........ [RUN]
+18:17:46 | 32 of 87 OK created view model analytics.quickbooks_invoice_lines ... [CREATE VIEW in 1.03s]
+18:17:46 | 33 of 87 START view model analytics.quickbooks_purchase_lines ....... [RUN]
+18:17:47 | 33 of 87 OK created view model analytics.quickbooks_purchase_lines .. [CREATE VIEW in 1.01s]
+18:17:47 | 34 of 87 START view model analytics.aux_account_employees_xf ........ [RUN]
+18:17:48 | 34 of 87 OK created view model analytics.aux_account_employees_xf ... [INSERT 0 1 in 1.45s]
+18:17:48 | 35 of 87 START view model analytics.uv_accounts ..................... [RUN]
+18:17:50 | 35 of 87 OK created view model analytics.uv_accounts ................ [INSERT 0 1 in 1.47s]
+18:17:50 | 36 of 87 START view model analytics.quickbooks_deposit_lines ........ [RUN]
+18:17:51 | 36 of 87 OK created view model analytics.quickbooks_deposit_lines ... [CREATE VIEW in 1.18s]
+18:17:51 | 37 of 87 START view model analytics.quickbooks_bill_lines ........... [RUN]
+18:17:52 | 37 of 87 OK created view model analytics.quickbooks_bill_lines ...... [CREATE VIEW in 1.18s]
+18:17:52 | 38 of 87 START view model analytics.uv_nps_ratings_xf ............... [RUN]
+18:17:53 | 38 of 87 OK created view model analytics.uv_nps_ratings_xf .......... [INSERT 0 1 in 1.05s]
+18:17:53 | 39 of 87 START view model analytics.quickbooks_classes .............. [RUN]
+18:17:54 | 39 of 87 OK created view model analytics.quickbooks_classes ......... [CREATE VIEW in 1.17s]
+18:17:54 | 40 of 87 START view model analytics.cb_companies_current ............ [RUN]
+18:17:56 | 40 of 87 OK created view model analytics.cb_companies_current ....... [INSERT 0 1 in 1.13s]
+18:17:56 | 41 of 87 START view model analytics.quickbooks_journal_lines ........ [RUN]
+18:17:56 | 41 of 87 OK created view model analytics.quickbooks_journal_lines ... [CREATE VIEW in 0.86s]
+18:17:56 | 42 of 87 START view model analytics.quickbooks_payment_transactions . [RUN]
+18:17:57 | 42 of 87 OK created view model analytics.quickbooks_payment_transactions  [CREATE VIEW in 0.76s]
+18:17:57 | 43 of 87 START table model analytics.quickbooks_parent_class_map .... [RUN]
+18:17:59 | 43 of 87 OK created table model analytics.quickbooks_parent_class_map  [SELECT in 1.77s]
+18:17:59 | 44 of 87 START view model analytics.uv_transactions ................. [RUN]
+18:18:00 | 44 of 87 OK created view model analytics.uv_transactions ............ [INSERT 0 1 in 1.30s]
+18:18:00 | 45 of 87 START view model analytics.quickbooks_bill_transactions .... [RUN]
+18:18:01 | 45 of 87 OK created view model analytics.quickbooks_bill_transactions  [CREATE VIEW in 0.76s]
+18:18:01 | 46 of 87 START table model analytics.account_inferred_products ...... [RUN]
+18:18:06 | 46 of 87 OK created table model analytics.account_inferred_products . [INSERT 0 1 in 5.14s]
+18:18:06 | 47 of 87 START view model analytics.account_domains ................. [RUN]
+18:18:07 | 47 of 87 OK created view model analytics.account_domains ............ [INSERT 0 1 in 0.92s]
+18:18:07 | 48 of 87 START view model analytics.all_days ........................ [RUN]
+18:18:08 | 48 of 87 OK created view model analytics.all_days ................... [INSERT 0 1 in 0.98s]
+18:18:08 | 49 of 87 START view model analytics.quickbooks_billpayment_transactions  [RUN]
+18:18:10 | 49 of 87 OK created view model analytics.quickbooks_billpayment_transactions  [CREATE VIEW in 1.19s]
+18:18:10 | 50 of 87 START view model analytics.quickbooks_accounts_xf .......... [RUN]
+18:18:11 | 50 of 87 OK created view model analytics.quickbooks_accounts_xf ..... [CREATE VIEW in 1.05s]
+18:18:11 | 51 of 87 START view model analytics.uv_transactions_xf .............. [RUN]
+18:18:11 | 51 of 87 OK created view model analytics.uv_transactions_xf ......... [INSERT 0 1 in 0.71s]
+18:18:11 | 52 of 87 START view model analytics.quickbooks_journal_transactions . [RUN]
+18:18:13 | 52 of 87 OK created view model analytics.quickbooks_journal_transactions  [CREATE VIEW in 1.41s]
+18:18:13 | 53 of 87 START view model analytics.cb_companies_aliased ............ [RUN]
+18:18:15 | 53 of 87 OK created view model analytics.cb_companies_aliased ....... [INSERT 0 1 in 2.13s]
+18:18:15 | 54 of 87 START view model analytics.sf_opportunities_xf ............. [RUN]
+18:18:16 | 54 of 87 OK created view model analytics.sf_opportunities_xf ........ [INSERT 0 1 in 0.77s]
+18:18:16 | 55 of 87 START view model analytics.quickbooks_deposit_transactions . [RUN]
+18:18:17 | 55 of 87 OK created view model analytics.quickbooks_deposit_transactions  [CREATE VIEW in 1.01s]
+18:18:17 | 56 of 87 START view model analytics.all_months ...................... [RUN]
+18:18:18 | 56 of 87 OK created view model analytics.all_months ................. [INSERT 0 1 in 0.77s]
+18:18:18 | 57 of 87 START table model analytics.quickbooks_parent_accounts_map . [RUN]
+18:18:24 | 57 of 87 OK created table model analytics.quickbooks_parent_accounts_map  [SELECT in 5.98s]
+18:18:24 | 58 of 87 START view model analytics.account_segments ................ [RUN]
+18:18:25 | 58 of 87 OK created view model analytics.account_segments ........... [INSERT 0 1 in 1.08s]
+18:18:25 | 59 of 87 START view model analytics.cb_domains_with_current_info .... [RUN]
+18:18:26 | 59 of 87 OK created view model analytics.cb_domains_with_current_info  [INSERT 0 1 in 0.83s]
+18:18:26 | 60 of 87 START view model analytics.quickbooks_invoice_transactions . [RUN]
+18:18:26 | 60 of 87 OK created view model analytics.quickbooks_invoice_transactions  [CREATE VIEW in 0.49s]
+18:18:26 | 61 of 87 START view model analytics.quickbooks_purchase_transactions  [RUN]
+18:18:27 | 61 of 87 OK created view model analytics.quickbooks_purchase_transactions  [CREATE VIEW in 1.01s]
+18:18:27 | 62 of 87 START view model analytics.transactions_joined ............. [RUN]
+18:18:29 | 62 of 87 OK created view model analytics.transactions_joined ........ [INSERT 0 1 in 1.68s]
+18:18:29 | 63 of 87 START view model analytics.transactions_corrected .......... [RUN]
+18:18:30 | 63 of 87 OK created view model analytics.transactions_corrected ..... [INSERT 0 1 in 0.81s]
+18:18:30 | 64 of 87 START view model analytics.transactions_churnable .......... [RUN]
+18:18:31 | 64 of 87 OK created view model analytics.transactions_churnable ..... [INSERT 0 1 in 1.13s]
+18:18:31 | 65 of 87 START table model analytics.uv_accounts_xf ................. [RUN]
+18:18:35 | 65 of 87 OK created table model analytics.uv_accounts_xf ............ [INSERT 0 1 in 4.09s]
+18:18:35 | 66 of 87 START view model analytics.account_months .................. [RUN]
+18:18:36 | 66 of 87 OK created view model analytics.account_months ............. [INSERT 0 1 in 0.96s]
+18:18:36 | 67 of 87 START view model analytics.account_employees ............... [RUN]
+18:18:37 | 67 of 87 OK created view model analytics.account_employees .......... [INSERT 0 1 in 0.74s]
+18:18:37 | 68 of 87 START view model analytics.transactions_amortized .......... [RUN]
+18:18:38 | 68 of 87 OK created view model analytics.transactions_amortized ..... [INSERT 0 1 in 0.98s]
+18:18:38 | 69 of 87 START view model analytics.transactions_combined ........... [RUN]
+18:18:39 | 69 of 87 OK created view model analytics.transactions_combined ...... [INSERT 0 1 in 0.83s]
+18:18:39 | 70 of 87 START view model analytics.transactions_final_churn ........ [RUN]
+18:18:40 | 70 of 87 OK created view model analytics.transactions_final_churn ... [INSERT 0 1 in 0.88s]
+18:18:40 | 71 of 87 START view model analytics.transactions_typed .............. [RUN]
+18:18:41 | 71 of 87 OK created view model analytics.transactions_typed ......... [INSERT 0 1 in 1.19s]
+18:18:41 | 72 of 87 START view model analytics.transactions_churned ............ [RUN]
+18:18:42 | 72 of 87 OK created view model analytics.transactions_churned ....... [INSERT 0 1 in 1.20s]
+18:18:42 | 73 of 87 START table model analytics.quickbooks_general_ledger ...... [RUN]
+18:18:46 | 73 of 87 OK created table model analytics.quickbooks_general_ledger . [SELECT in 3.94s]
+18:18:46 | 74 of 87 START view model analytics.quickbooks_ledger_xf ............ [RUN]
+18:18:47 | 74 of 87 OK created view model analytics.quickbooks_ledger_xf ....... [CREATE VIEW in 0.54s]
+18:18:47 | 75 of 87 START view model analytics.quickbooks_days ................. [RUN]
+18:18:48 | 75 of 87 OK created view model analytics.quickbooks_days ............ [CREATE VIEW in 1.51s]
+18:18:48 | 76 of 87 START view model analytics.quickbooks_months ............... [RUN]
+18:18:49 | 76 of 87 OK created view model analytics.quickbooks_months .......... [CREATE VIEW in 0.69s]
+18:18:49 | 77 of 87 START view model analytics.quickbooks_toplevel_account_metrics  [RUN]
+18:18:50 | 77 of 87 OK created view model analytics.quickbooks_toplevel_account_metrics  [CREATE VIEW in 1.14s]
+18:18:50 | 78 of 87 START view model analytics.quickbooks_ledger_cac_categories  [RUN]
+18:18:51 | 78 of 87 OK created view model analytics.quickbooks_ledger_cac_categories  [INSERT 0 1 in 0.94s]
+18:18:51 | 79 of 87 START view model analytics.quickbooks_ledger_by_month ...... [RUN]
+18:18:52 | 79 of 87 OK created view model analytics.quickbooks_ledger_by_month . [CREATE VIEW in 0.82s]
+18:18:52 | 80 of 87 START view model analytics.quickbooks_cac_denormalized ..... [RUN]
+18:18:54 | 80 of 87 OK created view model analytics.quickbooks_cac_denormalized  [INSERT 0 1 in 1.57s]
+18:18:54 | 81 of 87 START view model analytics.quickbooks_toplevel_class_metrics  [RUN]
+18:18:54 | 81 of 87 OK created view model analytics.quickbooks_toplevel_class_metrics  [CREATE VIEW in 0.86s]
+18:18:55 | 82 of 87 START view model analytics.transactions_enriched ........... [RUN]
+18:18:56 | 82 of 87 OK created view model analytics.transactions_enriched ...... [INSERT 0 1 in 1.12s]
+18:18:56 | 83 of 87 START table model analytics.transactions ................... [RUN]
+18:19:29 | 83 of 87 OK created table model analytics.transactions .............. [INSERT 0 1 in 33.13s]
+18:19:29 | 84 of 87 START view model analytics.current_accounts ................ [RUN]
+18:19:30 | 84 of 87 OK created view model analytics.current_accounts ........... [INSERT 0 1 in 0.94s]
+18:19:30 | 85 of 87 START view model analytics.quickbooks_cac_revenue_splits ... [RUN]
+18:19:31 | 85 of 87 OK created view model analytics.quickbooks_cac_revenue_splits  [INSERT 0 1 in 1.09s]
+18:19:31 | 86 of 87 START view model analytics.cb_domains_without_current_info . [RUN]
+18:19:32 | 86 of 87 OK created view model analytics.cb_domains_without_current_info  [INSERT 0 1 in 0.67s]
+18:19:32 | 87 of 87 START view model analytics.quickbooks_cac .................. [RUN]
+18:19:33 | 87 of 87 OK created view model analytics.quickbooks_cac ............. [INSERT 0 1 in 1.21s]
+
+18:19:33 | Finished running 87 models
+Done. PASS=87 ERROR=0 SKIP=0 TOTAL=87</pre>
+	</div>
+	<div class="section-body section-body-large section-body-white" ng-if="(run_mode=='notifications')">
+		hello logs...
+	</div>
+</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			
+		
+			
+		
+			
+		
+			
+		
+		<script>
+			$('.modal').on('click', function(e) { $('.modal').modal('hide'); }).on('click', '.modal-content', function(e) { e.stopPropagation(); });
+			$('.modal').on('shown', function() { $(".modal-dialog:visible").focus(); });
+			$(document).ready(function(){
+				var scope = angular.element($('body')[0]).scope();
+				scope.$apply(function() {
+					scope.route = 'account-team';
+					scope.mode = '';
+					scope.import_mode = 'github';
+					scope.import_account = false;
+					scope.github_accounts = ['companyname','quartzstudio','veritas','fishtown-analytics','kvasir','graduationavocet','unthinkingyard','vestfrog','snailcarlisle','twentytrap','alkaliremy','zaftigjune','selectorlardface','shopbowed','finaglestrangely','tastelesswaggler','boyoptimize','dreamergnashing','waylonclimb','itachernar','groveaccept','brewersandwich','cloisteredjoining','bytecodenuts','doofusuranium','carillonsafe','sporesmainstay','ovarybooes'];
+					scope.bitbucket_accounts = ['doofusuranium','carillonsafe','sporesmainstay','ovarybooes'];
+					scope.connections = ['Connection 1','Connection 2','Connection 3'];
+					scope.github_repos = ['analytics','analytics-test','interfaces','website','data-mining','sporesmainstay','ovarybooes','zanyhorologium','tacoslethbridge','questmerchants','esraganbrackish','circleflamboyant','importburst','scalepoppysmic','charlestonvinney','dionardhospitable','patrickunripe','machrieumbrella','rawchickenhaffes','embedsandy','resonatescrag','sorbetfun','canoodleloser','playoffswee','trolleyathletics','redwillow','clearedenderman'];
+					scope.bitbucket_repos = ['zanyhorologium','tacoslethbridge','questmerchants','esraganbrackish','circleflamboyant','importburst','scalepoppysmic','charlestonvinney','dionardhospitable','patrickunripe','machrieumbrella','rawchickenhaffes','embedsandy','resonatescrag','sorbetfun','canoodleloser','playoffswee','trolleyathletics','redwillow','clearedenderman'];
+					scope.run_mode = 'logs';
+					scope.setup_ssh = false;
+					scope.selectrepo = function(repo){
+						scope.import_repo = repo;
+					}
+					scope.showroute = function(area){
+						console.log('route:'+area);
+						scope.route = area;
+						scope.menu = false;
+						if ( !area.includes('setup') ) {
+							scope.mode = "default";
+						}
+						var url_parts = window.location.href.split("/");
+						if ( url_parts[url_parts.length-1] == '' ) { url_parts.pop(); }
+						url_parts[url_parts.length-1] = area;
+						window.history.pushState("object or string", "Title", url_parts.join('/'));
+					}
+					scope.showmenu = function(menu){
+						console.log('menu:'+menu);
+						scope.menu = menu;
+					}
+					scope.hidemenu = function(){
+						console.log('menu');
+						scope.menu = false;
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
