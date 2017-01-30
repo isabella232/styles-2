@@ -4,7 +4,7 @@ mode: minimal
 ---
 
 <div class="app-body">
-	<div class="app-setup">
+	<div class="app-setup app-setup-top">
 		<div class="app-setup-content">
 			<div class="app-setup-body">
 			
@@ -15,19 +15,12 @@ mode: minimal
 					</h1>
 				</div>
 				<div class="section">
-					<div class="section-header">
-						<div class="header">
-							<div class="header-title">
-								<h4>Team</h4>
-							</div>
-						</div>
-					</div>
 					<div class="section-table">
 						<table class="table table-justified table-large">
 							<tbody>
 								<tr>
 									<td class="sm"><div class="avatar avatar-large"><img src="{{site.baseurl}}/ui/img/avatars/avatar1.jpg"></div></td>
-									<td><h3>Tristan Handy</h3></td>
+									<td class="sm"><h3>Tristan Handy</h3></td>
 									<td><div class="meta">tristan@sinterdata.com</div></td>
 									<td>
 										<div class="dropdown">
@@ -42,8 +35,8 @@ mode: minimal
 								</tr>
 								<tr>
 									<td class="sm"><div class="avatar avatar-large"></div></td>
-									<td><h3>Justin Example</h3></td>
-									<td><div class="meta">justin@sinterdata.com</div></td>
+									<td class="sm"><h3>Justin Example</h3></td>
+									<td><div class="meta">this-wont-be-here-on-setup-just-demo@sinterdata.com</div></td>
 									<td>
 										<div class="dropdown">
 											<div class="light" data-toggle="dropdown"><span class="caret"></span></div>
@@ -59,7 +52,12 @@ mode: minimal
 						</table>
 					</div>
 				</div>
-
+				<form>
+					<textarea ng-model="invites" class="form-control input-lg focus input-dark" placeholder="Invite additional team members by entering email addresses, separated with commas or new lines..."></textarea>
+					<div class="form-footer" ng-if="invites" >
+						<input type="submit" class="btn btn-info" value="Invite" />
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -72,7 +70,7 @@ mode: minimal
 		</div>
 		<div class="header-actions">
 			<a class="btn btn-link meta" ng-click="showroute('setup')">Go Back</a>
-			<a ng-if="(import_repo)" ng-click="showroute('setup-connection')" class="btn btn-success">Continue</a>
+			<a ng-click="showroute('setup-connection')" class="btn btn-success">Continue <i data-icon="right-open-mini" class="icon-end"></i></a>
 		</div>
 	</div>
 </div>

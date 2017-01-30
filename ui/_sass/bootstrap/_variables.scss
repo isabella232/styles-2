@@ -291,7 +291,7 @@ $input-color-placeholder-hover:        darken($light,10%) !default;
 
 // //** Default `.form-control` height
 $input-height-base:              32px;
-$textarea-height:                4em;
+$textarea-height:                6em;
 // //** Large `.form-control` height
 $input-height-large:             48px;
 // //** Small `.form-control` height
@@ -920,8 +920,8 @@ $breadcrumb-bg:                 transparent !default;
 // //
 // //##
 
-// $code-color:                  #c7254e !default;
-// $code-bg:                     #f9f2f4 !default;
+$code-color:                  white !default;
+$code-bg:                     $blue-darkest !default;
 
 // $kbd-color:                   #fff !default;
 // $kbd-bg:                      #333 !default;

@@ -17,7 +17,10 @@
 		}
 	}
 	&:not(.btn-icon) {
-		[data-icon] { margin-right: .25em; }
+		[data-icon] {
+			&:not(.icon-end) { margin-right: .25em; }
+			&.icon-end { margin-right: -5px; }
+		}
 	}
 	+ .btn { margin-left: .5em; }
 	&:not(.btn-link) { font-weight: bold; }

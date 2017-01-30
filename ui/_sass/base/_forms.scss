@@ -46,10 +46,17 @@
 $form-grid-padding: 5px;
 
 .form-grid {
-	@include table-rows(top);
+	display: table;
+	width: 100%;
+	.form-row-group {
+		display: table-row-group;
+	}
 	.form-row {
-		> * {
+		display: table-row;
+		.form-label, .form-response {
+			display: table-cell;
 			padding: $form-grid-padding;
+			vertical-align: top;
 			&:first-child { padding-left: 0; }
 			&:last-child { padding-right: 0; }
 			.form-row > * { padding-top: 0; padding-bottom: 0; }
@@ -66,16 +73,12 @@ $form-grid-padding: 5px;
 					padding: ( $padding-large-vertical + 2 ) 0;
 				}
 			}
-			// &:first-child {
-			// 	+ .form-response {
-			// 		padding-left: $form-grid-padding*2;
-			// 	}
-			// }
+
 		}
 		.form-response {
 			.help-block {
 				margin: 0;
-				top: 5px;
+				top: 3px;
 			}
 			&.form-response-short {
 				width: 1px;
@@ -86,10 +89,6 @@ $form-grid-padding: 5px;
 				padding-top: 0;
 				padding-bottom: 0;
 			}
-		}
-		.form-option {
-			white-space: nowrap;
-			width: 1px;
 		}
 		> .form-label:first-child {
 			padding-right: 11px;
@@ -108,6 +107,9 @@ $form-grid-padding: 5px;
 
 .form-footer {
 	padding: $form-grid-padding*2 0;
+	&.form-footer-right {
+		text-align: right;
+	}
 }
 
 .has-error {

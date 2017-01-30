@@ -165,6 +165,7 @@
 					scope.github_repos = ['analytics','analytics-test','interfaces','website','data-mining','sporesmainstay','ovarybooes','zanyhorologium','tacoslethbridge','questmerchants','esraganbrackish','circleflamboyant','importburst','scalepoppysmic','charlestonvinney','dionardhospitable','patrickunripe','machrieumbrella','rawchickenhaffes','embedsandy','resonatescrag','sorbetfun','canoodleloser','playoffswee','trolleyathletics','redwillow','clearedenderman'];
 					scope.bitbucket_repos = ['zanyhorologium','tacoslethbridge','questmerchants','esraganbrackish','circleflamboyant','importburst','scalepoppysmic','charlestonvinney','dionardhospitable','patrickunripe','machrieumbrella','rawchickenhaffes','embedsandy','resonatescrag','sorbetfun','canoodleloser','playoffswee','trolleyathletics','redwillow','clearedenderman'];
 					scope.run_mode = 'logs';
+					scope.setup_ssh = false;
 					scope.selectrepo = function(repo){
 						scope.import_repo = repo;
 					}
@@ -172,6 +173,9 @@
 						console.log('route:'+area);
 						scope.route = area;
 						scope.menu = false;
+						if ( !area.includes('setup') ) {
+							scope.mode = "default";
+						}
 						var url_parts = window.location.href.split("/");
 						if ( url_parts[url_parts.length-1] == '' ) { url_parts.pop(); }
 						url_parts[url_parts.length-1] = area;

@@ -17,6 +17,14 @@ $section-padding-large: 30px;
 	.section-header {
 		padding: $section-padding-small $section-padding-large;
 		border-radius: $border-radius-base $border-radius-base 0 0;
+		&.danger { background: $state-danger-bg; color: $state-danger-text; }
+		&.warning { background: $state-warning-bg; color: $state-warning-text; }
+		&.success { background: $state-success-bg; color: $state-success-text; }
+		&.info { background: $state-info-bg; color: $state-info-text; }
+		&.section-header-large {
+			padding-top: $section-padding;
+			padding-bottom: $section-padding;
+		}
 	}
 	.section-body {
 		padding: $section-padding $section-padding-large;
@@ -58,6 +66,11 @@ $section-padding-large: 30px;
 
 .section-table {
 	.table { margin: 0; }
+	&:first-child tbody:first-child tr:first-child {
+		th, td {
+			border-width: 0;
+		}
+	}
 	td, th {
 		vertical-align: middle !important;
 		&:first-child { padding-left: $section-padding-large; }

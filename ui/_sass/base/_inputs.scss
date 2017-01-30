@@ -24,11 +24,11 @@
 		z-index: 3;
 		@include placeholder-style(($light !important),oblique);
 	}
-	&.input-light {
-		background: transparent !important;
-		border-color: transparent !important;
-		box-shadow: none !important;
-	}
+	// &.input-light {
+	// 	background: transparent !important;
+	// 	border-color: transparent !important;
+	// 	box-shadow: none !important;
+	// }
 	&[data-status="default"] {
 		color: $light;
 		font-style: oblique;
@@ -52,6 +52,12 @@
 			-webkit-appearance: none;
 			margin: 0;
 		}
+	}
+	&.input-dark {
+		background: $silver-dark;
+	}
+	&.input-light {
+		background: white;
 	}
 }
 

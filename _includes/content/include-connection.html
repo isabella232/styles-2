@@ -1,0 +1,49 @@
+<div class="section-label">
+	<h1>
+		Create a Connection
+		<small>Configure a connection to use with your...</small>
+	</h1>
+</div>
+
+
+
+<div class="flex app-flex">
+	<form class="section flex-item flex-3" data-toggle="validator">
+		<div class="section-header section-header-large danger">
+			<div class="alert alert-danger">
+				There was an error while connecting:
+				<code>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</code>
+			</div>
+		</div>
+		<div class="section-body section-body-large">
+			<div class="form-grid">
+				<div class="form-row"><div class="form-label"><label>Name</label></div><div class="form-response"><input type="text" class="form-control" placeholder="connection name"></div></div>
+				<div class="form-row"><div class="form-label"><label>Host</label></div><div class="form-response form-group has-feedback"><input required data-error="Please provide a connection URL" type="text" class="form-control" placeholder="xyz.amazonaws.com"><p class="help-block with-errors"></p></div></div>
+				<div class="form-row"><div class="form-label"><label>Username</label></div><div class="form-response form-group has-feedback"><input required data-error="Please enter a username" type="text" class="form-control" placeholder="root"><p class="help-block with-errors"></p></div></div>
+				<div class="form-row"><div class="form-label"><label>Password</label></div><div class="form-response"><input type="text" class="form-control" placeholder="••••••••••••"></div></div>
+				<div class="form-row"><div class="form-label"><label>Database</label></div><div class="form-response form-group has-feedback"><input required data-error="Please provide a name for this connection" type="text" class="form-control" placeholder="abc_123"><p class="help-block with-errors"></p></div></div>
+				<div class="form-row"><div class="form-label"><label>Default Schema</label></div><div class="form-response form-group has-feedback"><input required data-error="..." type="text" class="form-control" placeholder=""><p class="help-block with-errors"></p></div></div>
+				<div class="form-row"><div class="form-label"><label>Port</label></div><div class="form-response form-group has-feedback"><input required data-error="..." type="text" class="form-control" placeholder="3306"><p class="help-block with-errors"></p></div></div>
+				<div class="form-row"><div class="form-label"></div><div class="form-response"><label class="option"><input type="checkbox" ng-model="setup_ssh" /><i class="option-icon"></i>Use SSH tunnel</label></div></div>
+				<div class="form-row-group" ng-if="setup_ssh">
+					<div class="form-row"><div class="form-label"><label>SSH Hostname</label></div><div class="form-response form-group has-feedback"><input required data-error="..." type="text" class="form-control" placeholder=""><p class="help-block with-errors"></p></div></div>
+					<div class="form-row"><div class="form-label"><label>SSH Username</label></div><div class="form-response form-group has-feedback"><input required data-error="..." type="text" class="form-control" placeholder=""><p class="help-block with-errors"></p></div></div>
+					<div class="form-row"><div class="form-label"><label>SSH Port</label></div><div class="form-response form-group has-feedback"><input required data-error="..." type="text" class="form-control" placeholder=""><p class="help-block with-errors"></p></div></div>
+					<div class="form-row"><div class="form-label"><label>SSH Public Key</label></div><div class="form-response form-group has-feedback"><textarea required data-error="..." class="form-control"></textarea><p class="help-block with-errors"></p></div></div>
+				</div>
+			</div>
+			<div class="form-footer form-footer-right">
+				<a class="btn btn-default"><i data-icon="arrows-ccw" class="meta"></i> Test Connection</a>
+			</div>
+		</div>
+
+	</form>
+	<div class="section section-seamless flex-item flex-2">
+		<div class="section-body section-body-large">
+			<h3>Help Section</h3>
+			<p class="meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<h3>Help Section</h3>
+			<p class="meta">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	</div>
+</div>

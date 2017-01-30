@@ -175,6 +175,10 @@ $app-menu-bg: $blue-dark;
 	padding: $app-padding-large;
 	.app-setup {
 		@include table(middle);
+		&.app-setup-top .app-setup-content {
+			padding-top: 5%;
+			vertical-align: top;
+		}
 		height: 100%;
 		.app-setup-content {
 			padding-bottom: $app-padding-large;
