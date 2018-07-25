@@ -14,3 +14,12 @@
 		padding: 20px;
 	}
 }
+
+.cards-sm {
+	margin: -20px;
+	@include columns(4,360px,0);
+	.card {
+		@include avoid-break;
+		padding: 20px;
+	}
+}
